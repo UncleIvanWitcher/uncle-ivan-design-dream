@@ -5,22 +5,22 @@ const SkillsSection: React.FC = () => {
   const skills = [
     { 
       name: 'Figma', 
-      icon: '/lovable-uploads/264c3b35-dd07-475a-b247-0e0581a219ab.png',
+      icon: '/lovable-uploads/9b3b8971-42bd-4633-b2e0-1405428f416e.png',
       color: 'from-brand-purple to-brand-blue'
     },
     { 
       name: 'Adobe Illustrator', 
-      icon: '/lovable-uploads/842f0a3f-1b50-4435-b31b-6bdc54a5f95f.png', 
+      icon: '/lovable-uploads/44787290-4b74-4a15-b662-f47b0d98bb1d.png', 
       color: 'from-brand-orange to-brand-yellow'
     },
     { 
       name: 'Adobe Photoshop', 
-      icon: '/lovable-uploads/604c8239-7753-4aa0-934b-87425532e774.png',
+      icon: '/lovable-uploads/ce1419fc-c115-462a-8060-c6c0e4a50af2.png',
       color: 'from-brand-blue to-brand-green' 
     },
     { 
       name: 'After Effects', 
-      icon: '/lovable-uploads/fb487477-0b41-4e23-8852-b0643cb41d5c.png',
+      icon: '/lovable-uploads/a8a74a49-60b9-4cea-a8a7-a94b2303f41e.png',
       color: 'from-brand-purple to-brand-darkpurple' 
     }
   ];
