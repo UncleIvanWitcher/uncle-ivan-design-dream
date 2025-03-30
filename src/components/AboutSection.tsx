@@ -1,10 +1,7 @@
-
 import React from 'react';
 import { Calendar, CheckCircle, Trophy } from 'lucide-react';
-
 const AboutSection: React.FC = () => {
-  return (
-    <section id="about" className="py-20 relative overflow-hidden">
+  return <section id="about" className="py-20 relative overflow-hidden">
       <div className="absolute top-0 left-0 w-full h-20 bg-gradient-to-b from-white to-transparent z-10"></div>
       <div className="container mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
         <h2 className="section-title text-center">
@@ -17,11 +14,7 @@ const AboutSection: React.FC = () => {
               <div className="absolute top-0 right-0 w-40 h-40 bg-brand-yellow opacity-10 rounded-full transform translate-x-10 -translate-y-10"></div>
               
               <div className="flex items-start gap-6 mb-8">
-                <img 
-                  src="/lovable-uploads/5eb1bb22-9306-4274-a6e6-881fd348cdd1.png" 
-                  alt="Uncle Ivan" 
-                  className="w-24 h-24 rounded-full border-4 border-brand-red shadow-lg" 
-                />
+                <img alt="Uncle Ivan" className="w-24 h-24 rounded-full border-4 border-brand-red shadow-lg" src="/lovable-uploads/c1b431b3-f138-4d2c-9f26-0e1e7b85e626.jpg" />
                 <div>
                   <h3 className="text-2xl font-bold mb-2">Иван</h3>
                   <p className="text-gray-600">Графический дизайнер</p>
@@ -50,26 +43,15 @@ const AboutSection: React.FC = () => {
               <h3 className="text-2xl font-bold mb-6">Мои преимущества</h3>
               
               <ul className="space-y-4">
-                {[
-                  'Точное следование брифу и техническому заданию',
-                  'Глубокое понимание маркетинговых стратегий',
-                  'Уникальный подход к каждому проекту',
-                  'Быстрое выполнение заказов любой сложности',
-                  'Неограниченное количество правок до полного утверждения',
-                  'Понимание тенденций современного дизайна'
-                ].map((item, index) => (
-                  <li key={index} className="flex items-start">
+                {['Точное следование брифу и техническому заданию', 'Глубокое понимание маркетинговых стратегий', 'Уникальный подход к каждому проекту', 'Быстрое выполнение заказов любой сложности', 'Неограниченное количество правок до полного утверждения', 'Понимание тенденций современного дизайна'].map((item, index) => <li key={index} className="flex items-start">
                     <CheckCircle className="w-6 h-6 text-brand-green mt-1 mr-3 flex-shrink-0" />
                     <span>{item}</span>
-                  </li>
-                ))}
+                  </li>)}
               </ul>
             </div>
           </div>
         </div>
       </div>
-    </section>
-  );
+    </section>;
 };
-
 export default AboutSection;
