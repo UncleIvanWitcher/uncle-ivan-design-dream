@@ -6,7 +6,7 @@ const TestimonialsSection: React.FC = () => {
   const testimonials = [
     {
       text: "Иван превзошел ожидания! Брендинг для Pocus Moscow увеличил наш трафик в 2 раза.",
-      author: "Анна",
+      author: "Всеволод",
       role: "CEO Pocus Moscow",
       color: "border-brand-red",
       image: "/lovable-uploads/25299389-5c74-4e75-aee6-b64c98178818.png"

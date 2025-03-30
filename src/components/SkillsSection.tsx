@@ -40,7 +40,7 @@ const SkillsSection: React.FC = () => {
         
         <div className="grid grid-cols-2 md:grid-cols-4 gap-6 mt-10">
           {skills.map((skill, index) => (
-            <div key={index} className="icon-box group">
+            <div key={index} className="icon-box group flex flex-col items-center text-center">
               <div className={`w-20 h-20 rounded-full flex items-center justify-center mb-4 bg-white shadow-lg p-4 group-hover:shadow-xl transition-all duration-300`}>
                 <img 
                   src={skill.icon} 
