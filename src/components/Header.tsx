@@ -8,7 +8,7 @@ const Header: React.FC = () => {
         <div className="flex flex-col lg:flex-row items-center justify-between gap-10">
           <div className="flex-1 text-center lg:text-left">
             <div className="flex items-center justify-center lg:justify-start mb-6">
-              <img src="/lovable-uploads/e5d7aa62-1d7a-4884-86bb-5949adfdc90a.png" alt="Uncle Ivan Logo" className="w-16 h-16 rounded-full border-2 border-brand-red mr-4" />
+              <img alt="Uncle Ivan Logo" className="w-16 h-16 rounded-full border-2 border-brand-red mr-4" src="/lovable-uploads/fb60ea8f-370b-47a1-8a3b-22c50aa09f1c.jpg" />
               <h1 className="text-3xl font-extrabold">Uncle Ivan</h1>
             </div>
             
