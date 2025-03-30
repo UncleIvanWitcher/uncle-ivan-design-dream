@@ -4,7 +4,7 @@ const CaseStudySection: React.FC = () => {
   return <section id="portfolio" className="py-20 relative overflow-hidden">
       <div className="container mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
         <h2 className="section-title text-center">
-          <span className="gradient-text from-brand-orange to-brand-yellow">Кейс-стади</span>
+          <span className="gradient-text from-brand-orange to-brand-yellow text-fuchsia-300">Кейс-стади</span>
         </h2>
         
         <div className="bg-white rounded-2xl shadow-xl overflow-hidden mt-12">
@@ -63,13 +63,8 @@ const CaseStudySection: React.FC = () => {
           description: 'Создание эффективных печатных материалов для маркетинговых кампаний',
           image: '/lovable-uploads/842f0a3f-1b50-4435-b31b-6bdc54a5f95f.png'
         }].map((item, index) => <div key={index} className="bg-white rounded-xl shadow-lg overflow-hidden transform hover:scale-105 transition-all duration-300">
-              <div className="h-48 overflow-hidden">
-                <img src={item.image} alt={item.title} className="w-full h-full object-center object-fill" />
-              </div>
-              <div className="p-6">
-                <h4 className="text-xl font-bold mb-2">{item.title}</h4>
-                <p className="text-gray-600">{item.description}</p>
-              </div>
+              
+              
             </div>)}
         </div>
       </div>
