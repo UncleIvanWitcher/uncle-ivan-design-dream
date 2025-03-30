@@ -14,9 +14,7 @@ const Footer: React.FC = () => {
             <h3 className="text-2xl font-bold">Uncle Ivan</h3>
           </div>
           
-          <p className="text-gray-600">
-            Творческое видение, реальные результаты. © 2023 Uncle Ivan. Все права защищены.
-          </p>
+          <p className="text-gray-600">Творческое видение, реальные результаты. © 2025 Uncle Ivan. Все права защищены.</p>
         </div>
       </div>
     </footer>;
