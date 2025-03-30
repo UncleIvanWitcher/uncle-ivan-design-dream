@@ -35,7 +35,7 @@ const Header: React.FC = () => {
           <div className="flex-1 relative">
             <div className="absolute top-0 right-0 w-32 h-32 bg-brand-yellow rounded-full opacity-30 -z-10"></div>
             <div className="absolute -bottom-10 -left-10 w-32 h-32 bg-brand-blue rounded-full opacity-30 -z-10"></div>
-            <img src="/lovable-uploads/5eb1bb22-9306-4274-a6e6-881fd348cdd1.png" alt="Uncle Ivan" className="rounded-xl shadow-2xl z-10 relative animate-float max-w-full" />
+            <img alt="Uncle Ivan" className="rounded-xl shadow-2xl z-10 relative animate-float max-w-full" src="/lovable-uploads/2a6b4a7a-a882-4872-a911-ffe2da639211.png" />
           </div>
         </div>
       </div>
