@@ -4,7 +4,7 @@ import React from 'react';
 const SkillsSection: React.FC = () => {
   const skills = [{
     name: 'Figma',
-    icon: '/lovable-uploads/518f6874-421a-4766-9af5-779997962ca5.png',
+    icon: '/lovable-uploads/d6d1953c-b0b2-46c3-8599-fcb3627ed469.png',
     color: 'from-brand-purple to-brand-blue'
   }, {
     name: 'Adobe Illustrator',
