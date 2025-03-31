@@ -21,9 +21,7 @@ const AboutSection: React.FC = () => {
                 </div>
               </div>
               
-              <p className="text-lg mb-6">
-                Я, Иван, занимаюсь дизайном более года, выполнил 100+ работ. Специализация: графический дизайн. Мои преимущества: точность, прагматизм, эффективность, проницательность.
-              </p>
+              <p className="text-lg mb-6">Я, Иван, занимаюсь дизайном более года, выполнил 400+ работ. Специализация: графический дизайн. Мои преимущества: точность, прагматизм, эффективность, проницательность.</p>
               
               <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
                 <div className="stat-badge bg-gradient-to-r from-brand-yellow to-brand-orange">
