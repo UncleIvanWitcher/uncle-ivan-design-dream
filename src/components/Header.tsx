@@ -1,5 +1,8 @@
+
 import React from 'react';
 import { Button } from '@/components/ui/button';
+import { MessageSquare } from 'lucide-react';
+
 const Header: React.FC = () => {
   return <header className="min-h-screen flex flex-col items-center justify-center relative overflow-hidden pt-20 pb-10 px-4 sm:px-6 lg:px-8">
       <div className="absolute inset-0 bg-white bg-opacity-80 backdrop-blur-sm z-0"></div>
@@ -23,9 +26,15 @@ const Header: React.FC = () => {
             </p>
             
             <div className="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start">
-              <Button className="btn-primary" onClick={() => document.getElementById('contact')?.scrollIntoView()}>
+              <a 
+                href="https://t.me/UncleIvanWitcher" 
+                target="_blank" 
+                rel="noopener noreferrer"
+                className="inline-flex items-center justify-center bg-brand-red text-white hover:bg-red-700 font-bold py-3 px-6 rounded-lg transition-all duration-300 transform hover:scale-105 shadow-lg"
+              >
+                <MessageSquare className="w-5 h-5 mr-2" />
                 Заказать проект
-              </Button>
+              </a>
               <Button className="bg-white border-2 border-brand-red text-brand-red hover:bg-brand-red hover:text-white font-bold py-3 px-6 rounded-lg transition-all duration-300 transform hover:scale-105 shadow-lg" onClick={() => document.getElementById('portfolio')?.scrollIntoView()}>
                 Портфолио
               </Button>
