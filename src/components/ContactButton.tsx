@@ -1,25 +1,10 @@
 
 import React from 'react';
-import { Button } from '@/components/ui/button';
 import { MessageSquare } from 'lucide-react';
 
 const ContactButton: React.FC = () => {
   return (
-    <div className="fixed bottom-8 right-8 z-50 flex flex-col gap-4">
-      <Button 
-        className="btn-secondary animate-pulse-slow"
-        onClick={() => document.getElementById('contact')?.scrollIntoView()}
-      >
-        Бесплатная консультация
-      </Button>
-      
-      <Button 
-        className="btn-primary"
-        onClick={() => document.getElementById('contact')?.scrollIntoView()}
-      >
-        Сделать заказ
-      </Button>
-      
+    <div className="fixed bottom-8 right-8 z-50">
       <a 
         href="https://t.me/UncleIvanWitcher" 
         target="_blank" 
