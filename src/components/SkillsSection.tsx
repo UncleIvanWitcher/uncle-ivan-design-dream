@@ -1,7 +1,5 @@
-
 import React from 'react';
 import { Card, CardContent } from '@/components/ui/card';
-
 const SkillsSection: React.FC = () => {
   const skills = [{
     name: 'Adobe After Effects',
@@ -20,7 +18,6 @@ const SkillsSection: React.FC = () => {
     icon: '/lovable-uploads/b0e7507a-306f-4181-91f2-d1a85016a759.png',
     color: 'from-[#00C8FF] to-[#0088cc]'
   }];
-
   return <section id="skills" className="py-20 bg-gray-50 relative overflow-hidden">
       <div className="absolute inset-0 bg-gradient-radial from-white to-transparent opacity-80"></div>
       
@@ -36,13 +33,7 @@ const SkillsSection: React.FC = () => {
         <div className="grid grid-cols-2 md:grid-cols-4 gap-8 mt-10">
           {skills.map((skill, index) => <Card key={index} className="group hover:shadow-xl transition-all duration-300 border-none bg-white overflow-hidden">
               <CardContent className="p-6 flex flex-col items-center text-center">
-                <div className="w-24 h-24 flex items-center justify-center mb-6 group-hover:scale-110 transition-all duration-300">
-                  <img 
-                    src={skill.icon} 
-                    alt={skill.name}
-                    className="w-full h-full object-contain"
-                  />
-                </div>
+                
                 <div className={`h-1 w-16 rounded-full bg-gradient-to-r ${skill.color} mb-4 group-hover:w-24 transition-all duration-300`}></div>
                 <h3 className="text-lg font-bold">{skill.name}</h3>
               </CardContent>
@@ -77,5 +68,4 @@ const SkillsSection: React.FC = () => {
       </div>
     </section>;
 };
-
 export default SkillsSection;
