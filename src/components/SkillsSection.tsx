@@ -36,7 +36,7 @@ const SkillsSection: React.FC = () => {
         <div className="grid grid-cols-2 md:grid-cols-4 gap-8 mt-10">
           {skills.map((skill, index) => <Card key={index} className="group hover:shadow-xl transition-all duration-300 border-none bg-white overflow-hidden">
               <CardContent className="p-6 flex flex-col items-center text-center">
-                <div className="w-20 h-20 rounded-xl flex items-center justify-center mb-6 p-4 group-hover:scale-110 transition-all duration-300">
+                <div className="w-24 h-24 flex items-center justify-center mb-6 group-hover:scale-110 transition-all duration-300">
                   <img 
                     src={skill.icon} 
                     alt={skill.name}
