@@ -1,23 +1,26 @@
+
 import React from 'react';
 import { Card, CardContent } from '@/components/ui/card';
+
 const SkillsSection: React.FC = () => {
   const skills = [{
     name: 'Adobe After Effects',
-    icon: '/lovable-uploads/137f6bad-e4a4-4f26-bdfe-29ebff2d27d8.png',
+    icon: '/lovable-uploads/468aaa48-4bf7-42e7-b317-fc3b8bd80d4a.png',
     color: 'from-[#9999FF] to-[#5151ff]'
   }, {
     name: 'Adobe Illustrator',
-    icon: '/lovable-uploads/972bb1cd-f6dd-4e02-873b-86492700c943.png',
+    icon: '/lovable-uploads/87d2be4d-d52d-4cbe-87aa-560e30d1da31.png',
     color: 'from-[#FF9A00] to-[#c97800]'
   }, {
     name: 'Figma',
-    icon: '/lovable-uploads/1bf96cea-82bc-4669-8d54-7848ea79b67c.png',
+    icon: '/lovable-uploads/9cf4adc9-57a1-430a-8dbd-ff2178e02858.png',
     color: 'from-[#FF5555] to-[#19BCFE]'
   }, {
     name: 'Adobe Photoshop',
-    icon: '/lovable-uploads/664da03b-8437-4f1c-a8c0-86161b7cb271.png',
+    icon: '/lovable-uploads/b0e7507a-306f-4181-91f2-d1a85016a759.png',
     color: 'from-[#00C8FF] to-[#0088cc]'
   }];
+
   return <section id="skills" className="py-20 bg-gray-50 relative overflow-hidden">
       <div className="absolute inset-0 bg-gradient-radial from-white to-transparent opacity-80"></div>
       
@@ -34,7 +37,11 @@ const SkillsSection: React.FC = () => {
           {skills.map((skill, index) => <Card key={index} className="group hover:shadow-xl transition-all duration-300 border-none bg-white overflow-hidden">
               <CardContent className="p-6 flex flex-col items-center text-center">
                 <div className="w-20 h-20 rounded-xl flex items-center justify-center mb-6 p-4 group-hover:scale-110 transition-all duration-300">
-                  
+                  <img 
+                    src={skill.icon} 
+                    alt={skill.name}
+                    className="w-full h-full object-contain"
+                  />
                 </div>
                 <div className={`h-1 w-16 rounded-full bg-gradient-to-r ${skill.color} mb-4 group-hover:w-24 transition-all duration-300`}></div>
                 <h3 className="text-lg font-bold">{skill.name}</h3>
@@ -70,4 +77,5 @@ const SkillsSection: React.FC = () => {
       </div>
     </section>;
 };
+
 export default SkillsSection;
