@@ -11,7 +11,7 @@ const Footer: React.FC = () => {
         <div className="mt-16 text-center">
           <div className="flex justify-center items-center mb-6">
             <img src="/lovable-uploads/e5d7aa62-1d7a-4884-86bb-5949adfdc90a.png" alt="Uncle Ivan Logo" className="w-12 h-12 rounded-full border-2 border-brand-red mr-3" />
-            <h3 className="text-2xl font-bold">Uncle Ivan</h3>
+            <h3 className="text-2xl font-bold">Uncle Ivan INC</h3>
           </div>
           
           <p className="text-gray-600">Творческое видение, реальные результаты. © 2025 Uncle Ivan. Все права защищены.</p>
