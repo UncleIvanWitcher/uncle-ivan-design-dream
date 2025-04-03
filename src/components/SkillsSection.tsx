@@ -1,5 +1,7 @@
+
 import React from 'react';
 import { Card, CardContent } from '@/components/ui/card';
+
 const SkillsSection: React.FC = () => {
   const skills = [{
     name: 'Adobe After Effects',
@@ -14,6 +16,7 @@ const SkillsSection: React.FC = () => {
     name: 'Adobe Photoshop',
     color: 'from-brand-blue to-brand-indigo'
   }];
+
   return <section id="skills" className="py-20 bg-gray-50 relative overflow-hidden">
       <div className="absolute inset-0 bg-gradient-radial from-white to-transparent opacity-80"></div>
       
@@ -27,15 +30,14 @@ const SkillsSection: React.FC = () => {
         </p>
         
         <div className="grid grid-cols-2 md:grid-cols-4 gap-8 mt-10">
-          {skills.map((skill, index) => <Card key={index} className="group hover:shadow-xl transition-all duration-300 border-none bg-white overflow-hidden">
+          {skills.map((skill, index) => (
+            <Card key={index} className="group hover:shadow-xl transition-all duration-300 border-none bg-white overflow-hidden">
               <CardContent className="p-6 flex flex-col items-center text-center">
-                <div className={`h-12 w-12 rounded-full bg-gradient-to-r ${skill.color} mb-4 flex items-center justify-center`}>
-                  <span className="text-white text-xs font-bold">{skill.name.split(' ').pop()?.charAt(0) || 'A'}</span>
-                </div>
-                <div className={`h-1 w-16 rounded-full bg-gradient-to-r ${skill.color} mb-4 group-hover:w-24 transition-all duration-300`}></div>
-                
+                <div className={`h-3 w-full rounded-full bg-gradient-to-r ${skill.color} mb-4`}></div>
+                <p className="font-medium text-gray-800">{skill.name}</p>
               </CardContent>
-            </Card>)}
+            </Card>
+          ))}
         </div>
         
         <div className="mt-20">
@@ -66,4 +68,5 @@ const SkillsSection: React.FC = () => {
       </div>
     </section>;
 };
+
 export default SkillsSection;
