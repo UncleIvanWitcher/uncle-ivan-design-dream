@@ -1,3 +1,4 @@
+
 import React from 'react';
 import { Calendar, CheckCircle, Trophy } from 'lucide-react';
 const AboutSection: React.FC = () => {
@@ -5,7 +6,7 @@ const AboutSection: React.FC = () => {
       <div className="absolute top-0 left-0 w-full h-20 bg-gradient-to-b from-white to-transparent z-10"></div>
       <div className="container mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
         <h2 className="section-title text-center">
-          <span className="gradient-text from-brand-purple to-brand-darkpurple">Обо мне</span>
+          <span className="gradient-text from-brand-indigo to-brand-purple">Обо мне</span>
         </h2>
         
         <div className="flex flex-col lg:flex-row items-center gap-12 mt-12">
@@ -24,11 +25,11 @@ const AboutSection: React.FC = () => {
               <p className="text-lg mb-6">Я, Иван, занимаюсь дизайном более года, выполнил 300+ работ. Специализация: графический дизайн. Мои преимущества: точность, прагматизм, эффективность, проницательность.</p>
               
               <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
-                <div className="stat-badge bg-gradient-to-r from-brand-yellow to-brand-orange">
+                <div className="stat-badge bg-gradient-to-r from-brand-orange to-brand-amber">
                   <Trophy className="w-8 h-8 text-white mr-3" />
                   <span className="text-xl font-bold text-white">100+ проектов</span>
                 </div>
-                <div className="stat-badge bg-gradient-to-r from-brand-blue to-brand-green">
+                <div className="stat-badge bg-gradient-to-r from-brand-indigo to-brand-azure">
                   <Calendar className="w-8 h-8 text-white mr-3" />
                   <span className="text-xl font-bold text-white">1+ год опыта</span>
                 </div>
@@ -41,8 +42,10 @@ const AboutSection: React.FC = () => {
               <h3 className="text-2xl font-bold mb-6">Мои преимущества</h3>
               
               <ul className="space-y-4">
-                {['Точное следование брифу и техническому заданию', 'Глубокое понимание маркетинговых стратегий', 'Уникальный подход к каждому проекту', 'Быстрое выполнение заказов любой сложности', 'Неограниченное количество правок до полного утверждения', 'Понимание тенденций современного дизайна'].map((item, index) => <li key={index} className="flex items-start">
-                    <CheckCircle className="w-6 h-6 text-brand-green mt-1 mr-3 flex-shrink-0" />
+                {['Точное следование брифу и техническому заданию', 'Глубокое понимание маркетинговых стратегий', 'Уникальный подход к каждому проекту', 'Быстрое выполнение заказов любой сложности', 'Неограниченное количество правок до полного утверждения', 'Понимание тенденций современного дизайна'].map((item, index) => <li key={index} className="flex items-start group">
+                    <div className="p-1 rounded-full bg-gradient-to-r from-brand-teal to-brand-blue transition-all duration-300 group-hover:scale-110 mr-3 flex-shrink-0">
+                      <CheckCircle className="w-5 h-5 text-white" />
+                    </div>
                     <span>{item}</span>
                   </li>)}
               </ul>

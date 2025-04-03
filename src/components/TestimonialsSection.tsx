@@ -34,7 +34,7 @@ const TestimonialsSection: React.FC = () => {
       
       <div className="container mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
         <h2 className="section-title text-center">
-          <span className="gradient-text from-brand-orange to-brand-red">Отзывы</span>
+          <span className="gradient-text from-brand-amber to-brand-red">Отзывы</span>
         </h2>
         
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mt-12">

@@ -21,11 +21,11 @@ const CaseStudySection: React.FC = () => {
                 </p>
                 
                 <div className="flex flex-wrap gap-4 mb-8">
-                  <div className="stat-badge bg-gradient-to-r from-brand-orange to-brand-yellow">
+                  <div className="stat-badge bg-gradient-to-r from-brand-orange to-brand-amber">
                     <TrendingUp className="w-6 h-6 text-white mr-2" />
                     <span className="text-lg font-bold text-white">+40% аудитории</span>
                   </div>
-                  <div className="stat-badge bg-gradient-to-r from-brand-blue to-brand-green">
+                  <div className="stat-badge bg-gradient-to-r from-brand-indigo to-brand-azure">
                     <TrendingUp className="w-6 h-6 text-white mr-2" />
                     <span className="text-lg font-bold text-white">+25% продаж</span>
                   </div>
