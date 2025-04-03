@@ -18,17 +18,7 @@ const Footer: React.FC = () => {
           
           <p className="text-gray-600">Творческое видение, реальные результаты. © 2025 Uncle Ivan. Все права защищены.</p>
           
-          <div className="flex justify-center mt-6 space-x-4">
-            <a href="#" className="w-10 h-10 flex items-center justify-center rounded-full bg-gradient-to-r from-brand-teal to-brand-blue text-white hover:opacity-90 transition-opacity">
-              <ExternalLink size={20} />
-            </a>
-            <a href="#" className="w-10 h-10 flex items-center justify-center rounded-full bg-gradient-to-r from-brand-indigo to-brand-violet text-white hover:opacity-90 transition-opacity">
-              <ExternalLink size={20} />
-            </a>
-            <a href="#" className="w-10 h-10 flex items-center justify-center rounded-full bg-gradient-to-r from-brand-orange to-brand-red text-white hover:opacity-90 transition-opacity">
-              <ExternalLink size={20} />
-            </a>
-          </div>
+          
         </div>
       </div>
     </footer>;
