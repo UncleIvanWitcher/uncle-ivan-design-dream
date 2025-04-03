@@ -63,16 +63,26 @@ export default {
 					border: 'hsl(var(--sidebar-border))',
 					ring: 'hsl(var(--sidebar-ring))'
 				},
-				// Custom brand colors
+				// Новые цвета бренда
 				brand: {
+					// Холодные цвета
+					teal: '#80ffdb',
+					turquoise: '#64dfdf',
+					blue: '#48bfe3',
+					azure: '#4ea8de',
+					indigo: '#5390d9',
+					periwinkle: '#5e60ce',
+					violet: '#6930c3',
+					purple: '#7400b8',
+					
+					// Теплые цвета
+					yellow: '#ffd819',
+					gold: '#f5bb00',
+					orange: '#ec7505',
+					amber: '#e89005',
+					rust: '#d84a05',
+					brick: '#f43c35',
 					red: '#d41243',
-					orange: '#f47835',
-					yellow: '#fed542',
-					blue: '#00aedb',
-					green: '#8ec127',
-					purple: '#a200ff',
-					darkpurple: '#662d91',
-					brick: '#f43c35'
 				},
 			},
 			borderRadius: {

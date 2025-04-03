@@ -5,16 +5,16 @@ import { Card, CardContent } from '@/components/ui/card';
 const SkillsSection: React.FC = () => {
   const skills = [{
     name: 'Adobe After Effects',
-    color: 'from-[#9999FF] to-[#5151ff]'
+    color: 'from-brand-turquoise to-brand-blue'
   }, {
     name: 'Adobe Illustrator',
-    color: 'from-[#FF9A00] to-[#c97800]'
+    color: 'from-brand-gold to-brand-orange'
   }, {
     name: 'Figma',
-    color: 'from-[#FF5555] to-[#19BCFE]'
+    color: 'from-brand-violet to-brand-blue'
   }, {
     name: 'Adobe Photoshop',
-    color: 'from-[#00C8FF] to-[#0088cc]'
+    color: 'from-brand-blue to-brand-indigo'
   }];
 
   return <section id="skills" className="py-20 bg-gray-50 relative overflow-hidden">
@@ -22,7 +22,7 @@ const SkillsSection: React.FC = () => {
       
       <div className="container mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
         <h2 className="section-title text-center">
-          <span className="gradient-text from-brand-blue to-brand-green">Инструменты</span>
+          <span className="gradient-text from-brand-indigo to-brand-teal">Инструменты</span>
         </h2>
         
         <p className="text-xl text-center max-w-2xl mx-auto mb-12">
@@ -54,11 +54,11 @@ const SkillsSection: React.FC = () => {
           }, {
             title: 'Графический Дизайн',
             description: 'Разработка привлекательных визуальных материалов для печати и цифровых платформ',
-            color: 'from-brand-yellow to-brand-orange'
+            color: 'from-brand-gold to-brand-orange'
           }, {
             title: 'Маркетинговые Материалы',
             description: 'Дизайн, который помогает достигать конкретных бизнес-целей и увеличивать продажи',
-            color: 'from-brand-blue to-brand-green'
+            color: 'from-brand-blue to-brand-indigo'
           }].map((skill, index) => (
                 <Card key={index} className="hover:shadow-xl transition-all duration-300 transform hover:scale-105 border-none bg-white">
                   <CardContent className="p-6">
