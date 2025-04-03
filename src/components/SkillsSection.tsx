@@ -5,19 +5,19 @@ import { Card, CardContent } from '@/components/ui/card';
 const SkillsSection: React.FC = () => {
   const skills = [{
     name: 'Adobe After Effects',
-    icon: '/lovable-uploads/e940dff3-249a-45ad-8474-fc54031678d4.png',
+    icon: '/lovable-uploads/b1dfde2b-8eae-476f-b951-f5c4843df5c0.png',
     color: 'from-brand-turquoise to-brand-blue'
   }, {
     name: 'Adobe Illustrator',
-    icon: '/lovable-uploads/afb29f05-837a-44d7-8c8c-7cbf7d218521.png',
+    icon: '/lovable-uploads/c09b5100-cf2d-41ba-87dd-41a5ed93ce07.png',
     color: 'from-brand-gold to-brand-orange'
   }, {
     name: 'Figma',
-    icon: '/lovable-uploads/161b569b-a8a2-48af-9d5d-dedabd3dd863.png',
+    icon: '/lovable-uploads/90557acf-bdbe-4348-be07-01f9ec876b1b.png',
     color: 'from-brand-violet to-brand-blue'
   }, {
     name: 'Adobe Photoshop',
-    icon: '/lovable-uploads/4245a564-0c02-4330-aac9-052c40277208.png',
+    icon: '/lovable-uploads/4ab1ba55-747e-480a-8806-3c4acc723d77.png',
     color: 'from-brand-blue to-brand-indigo'
   }];
 
