@@ -1,4 +1,3 @@
-
 import React, { useState } from 'react';
 import { ExternalLink, TrendingUp, ArrowRight, Check } from 'lucide-react';
 import { Card, CardContent } from '@/components/ui/card';
@@ -6,7 +5,7 @@ import { AspectRatio } from '@/components/ui/aspect-ratio';
 import { motion } from 'framer-motion';
 
 const CaseStudySection: React.FC = () => {
-  const [activeTab, setActiveTab] = useState<'all' | 'branding' | 'print' | 'digital'>('all');
+  const [activeTab, setActiveTab] = useState<'all' | 'branding' | 'vector' | 'digital'>('all');
   
   const portfolioItems = [
     {
@@ -23,15 +22,15 @@ const CaseStudySection: React.FC = () => {
     },
     {
       id: 3,
-      title: 'Пиксельная иллюстрация',
+      title: 'Векторная иллюстрация',
       image: '/lovable-uploads/4c1b5c9d-6ed1-440a-928d-44c6c8a40f7a.png',
-      category: 'digital'
+      category: 'vector'
     },
     {
       id: 4,
-      title: 'Маркетинговые материалы',
+      title: 'Векторная графика',
       image: '/lovable-uploads/3c127fba-d34a-4258-bcf3-0d66d201bf11.png',
-      category: 'print'
+      category: 'vector'
     },
     {
       id: 5,
@@ -56,7 +55,7 @@ const CaseStudySection: React.FC = () => {
       title: 'Графический дизайн',
       description: 'Создание визуальных материалов, которые эффективно передают сообщение бренда',
       image: '/lovable-uploads/3c127fba-d34a-4258-bcf3-0d66d201bf11.png',
-      features: ['Логотипы', 'Иллюстрации', 'Макеты для печати', 'Цифровые ресурсы']
+      features: ['Логотипы', 'Иллюстрации', 'Баннеры', 'Цифровые ресурсы']
     },
     {
       title: 'Брендинг',
@@ -65,10 +64,10 @@ const CaseStudySection: React.FC = () => {
       features: ['Логотип', 'Цветовая схема', 'Типографика', 'Руководство по стилю']
     },
     {
-      title: 'Дизайн печатных материалов',
-      description: 'Создание эффективных печатных материалов для маркетинговых кампаний',
+      title: 'Векторная графика',
+      description: 'Создание масштабируемых векторных иллюстраций и графических элементов',
       image: '/lovable-uploads/842f0a3f-1b50-4435-b31b-6bdc54a5f95f.png',
-      features: ['Визитки', 'Брошюры', 'Плакаты', 'Упаковка']
+      features: ['Иллюстрации', 'Иконки', 'Инфографика', 'Технические чертежи']
     }
   ];
 
@@ -155,7 +154,7 @@ const CaseStudySection: React.FC = () => {
             {[
               { id: 'all', label: 'Все работы' },
               { id: 'branding', label: 'Брендинг' },
-              { id: 'print', label: 'Печать' },
+              { id: 'vector', label: 'Вектор' },
               { id: 'digital', label: 'Цифровой дизайн' }
             ].map(tab => (
               <button 
