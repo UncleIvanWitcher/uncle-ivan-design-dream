@@ -1,14 +1,13 @@
-
 import React, { useState } from 'react';
 import { Card, CardContent } from '@/components/ui/card';
 import { motion } from 'framer-motion';
-import { Info, Check, Award, TrendingUp, Ae, Ps, Ai, Figma } from 'lucide-react';
+import { Info, Check, Award, TrendingUp } from 'lucide-react';
 import {
   Tooltip,
   TooltipContent,
   TooltipProvider,
   TooltipTrigger,
-} from "@/components/ui/tooltip";
+} from '@/components/ui/tooltip';
 
 const SkillsSection: React.FC = () => {
   const [hoveredSkill, setHoveredSkill] = useState<number | null>(null);

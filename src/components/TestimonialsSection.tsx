@@ -1,4 +1,3 @@
-
 import React, { useState } from 'react';
 import { Quote, Star, ChevronLeft, ChevronRight, MessageSquare } from 'lucide-react';
 import { Avatar, AvatarImage, AvatarFallback } from "@/components/ui/avatar";
@@ -16,7 +15,7 @@ const TestimonialsSection: React.FC = () => {
       color: "border-brand-brick",
       bgColor: "from-brand-yellow to-brand-orange/30",
       rating: 5,
-      image: "/lovable-uploads/86898651-dd96-4c37-baaa-63ecd659c8c1.jpg"
+      image: "/lovable-uploads/b9e6a79c-0256-4502-abac-0a1247a33e48.png"
     },
     {
       text: "Невероятно талантливый дизайнер. Создал для нас логотип, который сразу запоминается клиентам. Мы получили не просто красивые картинки, а полноценный визуальный язык бренда, который легко масштабируется на все материалы.",
@@ -25,7 +24,7 @@ const TestimonialsSection: React.FC = () => {
       color: "border-brand-indigo",
       bgColor: "from-brand-teal to-brand-blue/30",
       rating: 5,
-      image: "/lovable-uploads/c1b431b3-f138-4d2c-9f26-0e1e7b85e626.jpg"
+      image: "/lovable-uploads/b9e6a79c-0256-4502-abac-0a1247a33e48.png"
     },
     {
       text: "Работать с Иваном - одно удовольствие. Точно попадает в бриф и всегда предлагает свежие идеи. Дизайн, который он сделал для нашего бизнеса, получил множество положительных отзывов от клиентов и увеличил продажи на 30%.",
@@ -34,7 +33,7 @@ const TestimonialsSection: React.FC = () => {
       color: "border-brand-violet",
       bgColor: "from-brand-purple to-brand-violet/30",
       rating: 5,
-      image: "/lovable-uploads/86898651-dd96-4c37-baaa-63ecd659c8c1.jpg"
+      image: "/lovable-uploads/b9e6a79c-0256-4502-abac-0a1247a33e48.png"
     }
   ];
 

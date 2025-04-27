@@ -1,4 +1,3 @@
-
 import React from 'react';
 import { Button } from '@/components/ui/button';
 import { MessageSquare } from 'lucide-react';
@@ -11,7 +10,7 @@ const Header: React.FC = () => {
         <div className="flex flex-col lg:flex-row items-center justify-between gap-10">
           <div className="flex-1 text-center lg:text-left">
             <div className="flex items-center justify-center lg:justify-start mb-6">
-              <img alt="Uncle Ivan Logo" className="w-16 h-16 rounded-full border-2 border-brand-red mr-4" src="/lovable-uploads/fb60ea8f-370b-47a1-8a3b-22c50aa09f1c.jpg" />
+              <img alt="Uncle Ivan Logo" className="w-16 h-16 rounded-full border-2 border-brand-red mr-4 bg-black" src="/lovable-uploads/2d5b8d39-175c-4ec1-b6e6-dacc46ac117f.png" />
               <h1 className="text-3xl font-extrabold">Uncle Ivan</h1>
             </div>
             
@@ -56,4 +55,5 @@ const Header: React.FC = () => {
       </div>
     </header>;
 };
+
 export default Header;
