@@ -1,3 +1,4 @@
+
 import React from 'react';
 import { Button } from '@/components/ui/button';
 import { MessageSquare } from 'lucide-react';
@@ -10,7 +11,13 @@ const Header: React.FC = () => {
         <div className="flex flex-col lg:flex-row items-center justify-between gap-10">
           <div className="flex-1 text-center lg:text-left">
             <div className="flex items-center justify-center lg:justify-start mb-6">
-              <img alt="Uncle Ivan Logo" className="w-16 h-16 rounded-full border-2 border-brand-red mr-4 bg-black" src="/lovable-uploads/2d5b8d39-175c-4ec1-b6e6-dacc46ac117f.png" />
+              <div className="bg-white rounded-full p-2 shadow-md mr-4">
+                <img 
+                  alt="Uncle Ivan Logo" 
+                  className="w-16 h-16 object-contain" 
+                  src="/lovable-uploads/cd7b0a94-9d94-4b25-885c-2736ac7350cd.png" 
+                />
+              </div>
               <h1 className="text-3xl font-extrabold">Uncle Ivan</h1>
             </div>
             

@@ -1,3 +1,4 @@
+
 import React from 'react';
 import { Mail, Phone, MapPin, Send, Instagram, Facebook } from 'lucide-react';
 import { motion } from 'framer-motion';
@@ -71,8 +72,12 @@ const Footer: React.FC = () => {
         
         <div className="mt-16 text-center">
           <div className="flex justify-center items-center mb-6">
-            <div className="w-16 h-16 rounded-full overflow-hidden border-2 border-white shadow-md mr-3">
-              <img src="/lovable-uploads/2d5b8d39-175c-4ec1-b6e6-dacc46ac117f.png" alt="Uncle Ivan Logo" className="w-full h-full object-contain bg-black" />
+            <div className="bg-white p-2 rounded-full shadow-md mr-4">
+              <img 
+                src="/lovable-uploads/cd7b0a94-9d94-4b25-885c-2736ac7350cd.png" 
+                alt="Uncle Ivan Logo" 
+                className="w-16 h-16 object-contain" 
+              />
             </div>
             <h3 className="text-2xl font-bold gradient-text from-brand-blue to-brand-violet">Uncle Ivan INC</h3>
           </div>

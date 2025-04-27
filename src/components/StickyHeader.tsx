@@ -29,11 +29,13 @@ const StickyHeader: React.FC = () => {
         >
           <div className="container mx-auto flex items-center justify-between">
             <div className="flex items-center">
-              <img 
-                src="/lovable-uploads/cd7b0a94-9d94-4b25-885c-2736ac7350cd.png" 
-                alt="Uncle Ivan Logo" 
-                className="w-10 h-10 rounded-full mr-3" 
-              />
+              <div className="w-10 h-10 bg-white rounded-full overflow-hidden mr-3 p-1 shadow-sm">
+                <img 
+                  src="/lovable-uploads/cd7b0a94-9d94-4b25-885c-2736ac7350cd.png" 
+                  alt="Uncle Ivan Logo" 
+                  className="w-full h-full object-contain" 
+                />
+              </div>
               <span className="font-bold text-xl">Uncle Ivan</span>
             </div>
             
