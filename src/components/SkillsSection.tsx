@@ -2,7 +2,7 @@
 import React, { useState } from 'react';
 import { Card, CardContent } from '@/components/ui/card';
 import { motion } from 'framer-motion';
-import { Info, Check, Award, TrendingUp } from 'lucide-react';
+import { Info, Check, Award, TrendingUp, Ae, Ps, Ai, Figma } from 'lucide-react';
 import {
   Tooltip,
   TooltipContent,
@@ -17,22 +17,22 @@ const SkillsSection: React.FC = () => {
     name: 'Adobe After Effects',
     color: 'from-brand-turquoise to-brand-blue',
     description: 'Анимация и визуальные эффекты',
-    icon: '/lovable-uploads/25299389-5c74-4e75-aee6-b64c98178818.png'
-  }, {
-    name: 'Adobe Illustrator',
-    color: 'from-brand-gold to-brand-orange',
-    description: 'Векторная графика и иллюстрации',
-    icon: '/lovable-uploads/9b417d7f-fb74-435b-984e-bd95ea9dae30.png'
-  }, {
-    name: 'Figma',
-    color: 'from-brand-violet to-brand-blue',
-    description: 'UI/UX дизайн и прототипирование',
-    icon: '/lovable-uploads/5eb1bb22-9306-4274-a6e6-881fd348cdd1.png'
+    icon: "/lovable-uploads/de1c8367-ebbd-4363-b0c9-36e789c3bd6b.png"
   }, {
     name: 'Adobe Photoshop',
     color: 'from-brand-blue to-brand-indigo',
     description: 'Обработка изображений и фото',
-    icon: '/lovable-uploads/c1d67f81-eb57-4f4c-8fc9-a16372245ffc.png'
+    icon: "/lovable-uploads/e8983e8c-e632-4964-9cba-f7e91051ba01.png"
+  }, {
+    name: 'Adobe Illustrator',
+    color: 'from-brand-gold to-brand-orange',
+    description: 'Векторная графика и иллюстрации',
+    icon: "/lovable-uploads/fd99123f-1b4a-4584-911c-9f23c8299775.png"
+  }, {
+    name: 'Figma',
+    color: 'from-brand-violet to-brand-blue',
+    description: 'UI/UX дизайн и прототипирование',
+    icon: "/lovable-uploads/6209f4c4-bd6f-4f60-9e55-e9910e744947.png"
   }];
 
   const expertiseAreas = [
@@ -110,7 +110,7 @@ const SkillsSection: React.FC = () => {
                       <img 
                         src={skill.icon} 
                         alt={skill.name} 
-                        className="max-w-full max-h-full object-contain opacity-80 group-hover:opacity-100" 
+                        className="max-w-full max-h-full object-contain" 
                       />
                     </motion.div>
                   )}

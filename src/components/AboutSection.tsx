@@ -17,7 +17,7 @@ const AboutSection: React.FC = () => {
   const stats = [
     { icon: Trophy, value: '100+', label: 'проектов', color: 'from-brand-orange to-brand-amber' },
     { icon: Calendar, value: '1+', label: 'год опыта', color: 'from-brand-indigo to-brand-azure' },
-    { icon: Award, value: '90%', label: 'повторных обращений', color: 'from-brand-teal to-brand-green' },
+    { icon: Award, value: '90%', label: 'повторных обращений', color: 'from-brand-red to-brand-brick' },
     { icon: Clock, value: '24/7', label: 'поддержка клиентов', color: 'from-brand-violet to-brand-purple' }
   ];
 
@@ -92,7 +92,7 @@ const AboutSection: React.FC = () => {
                     <stat.icon className="w-8 h-8 text-white mr-3" />
                     <div className="flex flex-col">
                       <span className="text-xl font-bold text-white">{stat.value}</span>
-                      <span className="text-xs text-white/80">{stat.label}</span>
+                      <span className="text-sm text-white/90">{stat.label}</span>
                     </div>
                   </motion.div>
                 ))}

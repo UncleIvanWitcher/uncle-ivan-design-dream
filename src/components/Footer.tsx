@@ -1,4 +1,3 @@
-
 import React from 'react';
 import { Mail, Phone, MapPin, Send, Instagram, Facebook } from 'lucide-react';
 import { motion } from 'framer-motion';
@@ -39,8 +38,8 @@ const Footer: React.FC = () => {
                 </div>
                 <div>
                   <p className="text-sm text-white/70">Email</p>
-                  <a href="mailto:info@uncleivan.com" className="hover:text-white/80 transition-colors">
-                    info@uncleivan.com
+                  <a href="mailto:ivlevish4ever@gmail.com" className="hover:text-white/80 transition-colors">
+                    ivlevish4ever@gmail.com
                   </a>
                 </div>
               </div>
