@@ -1,3 +1,4 @@
+
 import React, { useState } from 'react';
 import { ExternalLink, TrendingUp, ArrowRight, Check } from 'lucide-react';
 import { Card, CardContent } from '@/components/ui/card';
@@ -179,19 +180,19 @@ const CaseStudySection: React.FC = () => {
               transition={{ duration: 0.5, delay: index * 0.1 }}
             >
               <Card className="overflow-hidden hover:shadow-xl transition-all duration-300 transform hover:scale-105 h-full">
-                <AspectRatio ratio={4/5}>
+                <div className="w-full h-64 relative bg-gray-50">
                   <img 
                     src={item.image} 
-                    alt={item.title} 
-                    className="object-cover w-full h-full"
+                    alt={item.title}
+                    className="object-contain w-full h-full"
                   />
-                </AspectRatio>
+                </div>
                 <CardContent className="p-4">
                   <h4 className="font-medium">{item.title}</h4>
                   <div className="mt-2">
                     <span className="inline-block px-2 py-1 bg-gray-100 text-xs rounded-full">
                       {item.category === 'branding' ? 'Брендинг' : 
-                       item.category === 'print' ? 'Печать' : 'Цифровой дизайн'}
+                       item.category === 'vector' ? 'Вектор' : 'Цифровой дизайн'}
                     </span>
                   </div>
                 </CardContent>
@@ -222,13 +223,13 @@ const CaseStudySection: React.FC = () => {
                 whileHover={{ y: -10 }}
               >
                 <Card className="bg-white rounded-xl shadow-lg overflow-hidden transform transition-all duration-300 h-full flex flex-col">
-                  <AspectRatio ratio={16/9}>
+                  <div className="w-full h-48 relative bg-gray-50">
                     <img 
                       src={service.image} 
-                      alt={service.title} 
-                      className="w-full h-full object-cover transition-transform duration-500 hover:scale-105"
+                      alt={service.title}
+                      className="w-full h-full object-contain"
                     />
-                  </AspectRatio>
+                  </div>
                   
                   <CardContent className="p-6 flex flex-col flex-grow">
                     <h4 className="text-xl font-bold mb-3">{service.title}</h4>
