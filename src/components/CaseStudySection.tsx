@@ -10,39 +10,39 @@ const CaseStudySection: React.FC = () => {
   const portfolioItems = [
     {
       id: 1,
-      title: 'Логотип для ресторана',
-      image: '/lovable-uploads/269c4c24-d0db-4bb0-912c-fe5cd1f455cf.png',
-      category: 'branding'
+      title: 'Векторная иллюстрация',
+      image: '/lovable-uploads/fa5f2de1-c599-435b-90a3-a16db37fe170.png',
+      category: 'vector'
     },
     {
       id: 2,
-      title: 'Дизайн концепции',
-      image: '/lovable-uploads/ad382bbc-1202-49e6-8da0-c7bf26537e46.png',
-      category: 'print'
+      title: 'Дизайн персонажа',
+      image: '/lovable-uploads/cbbf1e7b-c102-44e2-8388-7850a0868672.png',
+      category: 'vector'
     },
     {
       id: 3,
-      title: 'Векторная иллюстрация',
-      image: '/lovable-uploads/4c1b5c9d-6ed1-440a-928d-44c6c8a40f7a.png',
-      category: 'vector'
+      title: 'Брендинг',
+      image: '/lovable-uploads/33c4ac0c-bda1-4f2e-b863-5d9464fc66c0.png',
+      category: 'branding'
     },
     {
       id: 4,
       title: 'Векторная графика',
-      image: '/lovable-uploads/3c127fba-d34a-4258-bcf3-0d66d201bf11.png',
+      image: '/lovable-uploads/028266e0-8fe9-43fb-bf7b-a906baa2bc01.png',
       category: 'vector'
     },
     {
       id: 5,
-      title: 'Брендбук для стартапа',
-      image: '/lovable-uploads/604c8239-7753-4aa0-934b-87425532e774.png',
-      category: 'branding'
+      title: 'Иллюстрация',
+      image: '/lovable-uploads/70eaf3c6-e160-4b6b-a5a4-5cb5ecf683d3.png',
+      category: 'vector'
     },
     {
       id: 6,
-      title: 'Дизайн упаковки',
-      image: '/lovable-uploads/842f0a3f-1b50-4435-b31b-6bdc54a5f95f.png',
-      category: 'print'
+      title: 'Дизайн логотипа',
+      image: '/lovable-uploads/a0dea25d-4619-4c1c-bb7c-dc2e941fcee8.png',
+      category: 'branding'
     }
   ];
   
@@ -54,19 +54,19 @@ const CaseStudySection: React.FC = () => {
     {
       title: 'Графический дизайн',
       description: 'Создание визуальных материалов, которые эффективно передают сообщение бренда',
-      image: '/lovable-uploads/3c127fba-d34a-4258-bcf3-0d66d201bf11.png',
+      image: '/lovable-uploads/6eac1b81-185f-4d6d-8b24-33bc15cc1e94.png',
       features: ['Логотипы', 'Иллюстрации', 'Баннеры', 'Цифровые ресурсы']
     },
     {
       title: 'Брендинг',
       description: 'Разработка целостной визуальной идентичности, которая выделяет бренд на рынке',
-      image: '/lovable-uploads/604c8239-7753-4aa0-934b-87425532e774.png',
+      image: '/lovable-uploads/dc19b20d-389d-40f1-9143-a7331cd4b3ca.png',
       features: ['Логотип', 'Цветовая схема', 'Типографика', 'Руководство по стилю']
     },
     {
       title: 'Векторная графика',
       description: 'Создание масштабируемых векторных иллюстраций и графических элементов',
-      image: '/lovable-uploads/842f0a3f-1b50-4435-b31b-6bdc54a5f95f.png',
+      image: '/lovable-uploads/d94673ec-546b-4fd0-be68-fa7b43432134.png',
       features: ['Иллюстрации', 'Иконки', 'Инфографика', 'Технические чертежи']
     }
   ];
