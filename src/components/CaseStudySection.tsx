@@ -226,7 +226,7 @@ const CaseStudySection: React.FC = () => {
           }}>
                 <Card className="bg-white rounded-xl shadow-lg overflow-hidden transform transition-all duration-300 h-full flex flex-col">
                   <div className="w-full h-48 relative bg-gray-50">
-                    <img src={service.image} alt={service.title} className="w-full h-full object-fill" />
+                    <img src={service.image} alt={service.title} className="w-full h-full object-cover" />
                   </div>
                   
                   <CardContent className="p-6 flex flex-col flex-grow">
