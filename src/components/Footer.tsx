@@ -1,6 +1,6 @@
 
 import React from 'react';
-import { Mail, Phone, MapPin, Send, Instagram, Facebook } from 'lucide-react';
+import { Mail, Phone, MapPin, Instagram } from 'lucide-react';
 import { motion } from 'framer-motion';
 
 const Footer: React.FC = () => {
@@ -58,30 +58,14 @@ const Footer: React.FC = () => {
             
             <div className="flex items-center mt-10 space-x-4">
               <motion.a 
-                href="#" 
-                className="w-10 h-10 rounded-full bg-white/10 flex items-center justify-center hover:bg-white/20 transition-colors"
-                whileHover={{ scale: 1.1 }}
-                whileTap={{ scale: 0.9 }}
-              >
-                <Instagram className="w-5 h-5 text-white" />
-              </motion.a>
-              <motion.a 
-                href="#" 
-                className="w-10 h-10 rounded-full bg-white/10 flex items-center justify-center hover:bg-white/20 transition-colors"
-                whileHover={{ scale: 1.1 }}
-                whileTap={{ scale: 0.9 }}
-              >
-                <Facebook className="w-5 h-5 text-white" />
-              </motion.a>
-              <motion.a 
-                href="https://t.me/UncleIvanWitcher" 
+                href="https://www.instagram.com/uncleivaninc/profilecard/?igsh=bDdvb2F5YjB5aTRm"
                 target="_blank" 
                 rel="noopener noreferrer" 
                 className="w-10 h-10 rounded-full bg-white/10 flex items-center justify-center hover:bg-white/20 transition-colors"
                 whileHover={{ scale: 1.1 }}
                 whileTap={{ scale: 0.9 }}
               >
-                <Send className="w-5 h-5 text-white" />
+                <Instagram className="w-5 h-5 text-white" />
               </motion.a>
             </div>
           </div>
@@ -103,12 +87,12 @@ const Footer: React.FC = () => {
           
           <div className="mt-4">
             <a
-              href="https://t.me/UncleIvanWitcher"
+              href="https://www.instagram.com/uncleivaninc/profilecard/?igsh=bDdvb2F5YjB5aTRm"
               target="_blank"
               rel="noopener noreferrer"
               className="text-brand-blue hover:text-brand-indigo transition-colors"
             >
-              Telegram: @UncleIvanWitcher
+              Instagram: @uncleivaninc
             </a>
           </div>
         </div>
