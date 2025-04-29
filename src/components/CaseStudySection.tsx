@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { ExternalLink, TrendingUp, ArrowRight, Check, Palette, Vectors, Layout } from 'lucide-react';
+import { ExternalLink, TrendingUp, ArrowRight, Check, Palette, Layout } from 'lucide-react';
 import { Card, CardContent } from '@/components/ui/card';
 import { AspectRatio } from '@/components/ui/aspect-ratio';
 import { motion } from 'framer-motion';
@@ -53,7 +53,7 @@ const CaseStudySection: React.FC = () => {
     {
       title: 'Векторная графика',
       description: 'Создание масштабируемых векторных иллюстраций и графических элементов',
-      icon: Vectors,
+      icon: Layout,
       color: 'from-brand-indigo to-brand-violet',
       features: ['Иллюстрации', 'Иконки', 'Инфографика', 'Технические чертежи'],
       bgClass: 'bg-gradient-to-br from-blue-50 to-indigo-50'
