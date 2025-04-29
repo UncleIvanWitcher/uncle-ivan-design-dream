@@ -57,29 +57,46 @@ const Footer: React.FC = () => {
             </div>
             
             <div className="flex items-center mt-10 space-x-4">
-              <a href="#" className="w-10 h-10 rounded-full bg-white/10 flex items-center justify-center hover:bg-white/20 transition-colors">
+              <motion.a 
+                href="#" 
+                className="w-10 h-10 rounded-full bg-white/10 flex items-center justify-center hover:bg-white/20 transition-colors"
+                whileHover={{ scale: 1.1 }}
+                whileTap={{ scale: 0.9 }}
+              >
                 <Instagram className="w-5 h-5 text-white" />
-              </a>
-              <a href="#" className="w-10 h-10 rounded-full bg-white/10 flex items-center justify-center hover:bg-white/20 transition-colors">
+              </motion.a>
+              <motion.a 
+                href="#" 
+                className="w-10 h-10 rounded-full bg-white/10 flex items-center justify-center hover:bg-white/20 transition-colors"
+                whileHover={{ scale: 1.1 }}
+                whileTap={{ scale: 0.9 }}
+              >
                 <Facebook className="w-5 h-5 text-white" />
-              </a>
-              <a href="https://t.me/UncleIvanWitcher" target="_blank" rel="noopener noreferrer" className="w-10 h-10 rounded-full bg-white/10 flex items-center justify-center hover:bg-white/20 transition-colors">
+              </motion.a>
+              <motion.a 
+                href="https://t.me/UncleIvanWitcher" 
+                target="_blank" 
+                rel="noopener noreferrer" 
+                className="w-10 h-10 rounded-full bg-white/10 flex items-center justify-center hover:bg-white/20 transition-colors"
+                whileHover={{ scale: 1.1 }}
+                whileTap={{ scale: 0.9 }}
+              >
                 <Send className="w-5 h-5 text-white" />
-              </a>
+              </motion.a>
             </div>
           </div>
         </motion.div>
         
         <div className="mt-16 text-center">
           <div className="flex justify-center items-center mb-6">
-            <div className="bg-white p-2 rounded-full shadow-md mr-4">
+            <div className="bg-white w-16 h-16 p-2 rounded-full shadow-md mr-4 flex items-center justify-center">
               <img 
                 src="/lovable-uploads/cd7b0a94-9d94-4b25-885c-2736ac7350cd.png" 
                 alt="Uncle Ivan Logo" 
-                className="w-16 h-16 object-contain" 
+                className="w-full h-full object-contain" 
               />
             </div>
-            <h3 className="text-2xl font-bold gradient-text from-brand-blue to-brand-violet">Uncle Ivan INC</h3>
+            <h3 className="text-2xl font-bold gradient-text from-brand-blue to-brand-violet">Uncle Ivan</h3>
           </div>
           
           <p className="text-gray-600">Творческое видение, реальные результаты. © 2025 Uncle Ivan. Все права защищены.</p>

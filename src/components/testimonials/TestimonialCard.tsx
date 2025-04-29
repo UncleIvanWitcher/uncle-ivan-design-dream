@@ -1,75 +1,64 @@
 
 import React from 'react';
-import { Quote, Star } from 'lucide-react';
+import { Star, Quote } from 'lucide-react';
 import { motion } from 'framer-motion';
-import { Avatar, AvatarImage, AvatarFallback } from "@/components/ui/avatar";
 
-type TestimonialType = {
-  text: string;
-  author: string;
-  role: string;
-  color: string;
-  bgColor: string;
-  rating: number;
-  image: string;
-};
-
-interface TestimonialCardProps {
-  testimonial: TestimonialType;
+interface TestimonialProps {
+  testimonial: {
+    text: string;
+    author: string;
+    role: string;
+    color: string;
+    bgColor: string;
+    rating: number;
+    image: string;
+  };
   index: number;
   isMobile?: boolean;
 }
 
-const TestimonialCard: React.FC<TestimonialCardProps> = ({ testimonial, index, isMobile = false }) => {
-  const cardMotionProps = isMobile 
-    ? {
-        initial: { opacity: 0, x: 50 },
-        animate: { opacity: 1, x: 0 },
-        exit: { opacity: 0, x: -50 },
-        transition: { duration: 0.4 }
-      }
-    : {
-        initial: { opacity: 0, y: 30 },
-        whileInView: { opacity: 1, y: 0 },
-        transition: { duration: 0.6, delay: index * 0.2 },
-        viewport: { once: true },
-        whileHover: { y: -10 }
-      };
-
+const TestimonialCard: React.FC<TestimonialProps> = ({ testimonial, index, isMobile = false }) => {
   return (
     <motion.div
-      className={`testimony-card ${testimonial.color} transform transition-all duration-300 bg-gradient-to-br ${testimonial.bgColor}`}
-      {...cardMotionProps}
+      key={`testimonial-${index}`}
+      className={`testimony-card ${testimonial.color}`}
+      initial={{ opacity: 0, y: 20 }}
+      whileInView={{ opacity: 1, y: 0 }}
+      transition={{ duration: 0.5, delay: isMobile ? 0 : index * 0.1 }}
+      viewport={{ once: true }}
+      exit={isMobile ? { opacity: 0, y: -20 } : undefined}
     >
-      <Quote className={`${isMobile ? 'w-8 h-8' : 'w-10 h-10'} text-gray-200 absolute top-4 right-4`} />
+      <div className={`absolute inset-0 bg-gradient-to-br ${testimonial.bgColor} opacity-10 z-0`}></div>
       
-      <div className="flex mb-4">
-        {[...Array(5)].map((_, i) => (
-          <Star 
-            key={i} 
-            className={`${isMobile ? 'w-4 h-4' : 'w-5 h-5'} ${i < testimonial.rating ? 'text-yellow-400 fill-yellow-400' : 'text-gray-300'}`} 
-          />
-        ))}
-      </div>
-      
-      <p className={`${isMobile ? 'text-base' : 'text-lg'} mb-6 relative z-10`}>{testimonial.text}</p>
-      
-      <div className="flex items-center">
-        <div className={`${isMobile ? 'w-12 h-12' : 'w-14 h-14'} bg-white rounded-full overflow-hidden mr-4 p-1 shadow-md`}>
-          <Avatar>
-            <AvatarImage 
+      <div className="flex items-start gap-4 mb-4 relative z-10">
+        <div className="flex-shrink-0">
+          <div className="bg-white rounded-full p-2 shadow-md w-12 h-12 flex items-center justify-center">
+            <img 
               src={testimonial.image} 
-              alt={testimonial.author} 
-              className="w-full h-full object-contain"
+              alt={`${testimonial.author}'s company`} 
+              className="w-8 h-8 object-contain" 
             />
-            <AvatarFallback className="bg-brand-blue text-white">
-              {testimonial.author[0]}
-            </AvatarFallback>
-          </Avatar>
+          </div>
         </div>
         <div>
-          <h4 className="font-bold">{testimonial.author}</h4>
-          <p className={`${isMobile ? 'text-xs' : 'text-sm'} text-gray-600`}>{testimonial.role}</p>
+          <p className="font-bold text-lg">{testimonial.author}</p>
+          <p className="text-gray-600 text-sm">{testimonial.role}</p>
+        </div>
+      </div>
+      
+      <div className="mb-4 relative z-10">
+        <Quote className="w-8 h-8 text-gray-300 mb-2 inline-block" />
+        <p className="text-gray-700">{testimonial.text}</p>
+      </div>
+      
+      <div className="flex justify-between items-center relative z-10">
+        <div className="flex">
+          {[...Array(5)].map((_, i) => (
+            <Star
+              key={i}
+              className={`w-4 h-4 ${i < testimonial.rating ? 'text-yellow-400 fill-yellow-400' : 'text-gray-300'}`}
+            />
+          ))}
         </div>
       </div>
     </motion.div>
