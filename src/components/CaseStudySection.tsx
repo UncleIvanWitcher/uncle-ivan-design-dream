@@ -1,10 +1,12 @@
 import React, { useState } from 'react';
-import { ExternalLink, TrendingUp, ArrowRight, Check } from 'lucide-react';
+import { ExternalLink, TrendingUp, ArrowRight, Check, Palette, Vectors, Layout } from 'lucide-react';
 import { Card, CardContent } from '@/components/ui/card';
 import { AspectRatio } from '@/components/ui/aspect-ratio';
 import { motion } from 'framer-motion';
+
 const CaseStudySection: React.FC = () => {
   const [activeTab, setActiveTab] = useState<'all' | 'branding' | 'vector' | 'digital'>('all');
+  
   const portfolioItems = [{
     id: 1,
     title: 'Векторная иллюстрация',
@@ -36,55 +38,58 @@ const CaseStudySection: React.FC = () => {
     image: '/lovable-uploads/a0dea25d-4619-4c1c-bb7c-dc2e941fcee8.png',
     category: 'branding'
   }];
+  
   const filteredItems = activeTab === 'all' ? portfolioItems : portfolioItems.filter(item => item.category === activeTab);
-  const services = [{
-    title: 'Брендинг',
-    description: 'Разработка целостной визуальной идентичности, которая выделяет бренд на рынке',
-    image: '/lovable-uploads/646675ce-72fa-4d9e-9687-d210fe4124e9.png',
-    features: ['Логотип', 'Цветовая схема', 'Типографика', 'Руководство по стилю']
-  }, {
-    title: 'Векторная графика',
-    description: 'Создание масштабируемых векторных иллюстраций и графических элементов',
-    image: '/lovable-uploads/1bde3518-ae7f-4b64-b7fe-91949c12bf3c.png',
-    features: ['Иллюстрации', 'Иконки', 'Инфографика', 'Технические чертежи']
-  }, {
-    title: 'Графический дизайн',
-    description: 'Создание визуальных материалов, которые эффективно передают сообщение бренда',
-    image: '/lovable-uploads/a06fa0c5-dc87-45aa-983f-037a8bc700d0.png',
-    features: ['Логотипы', 'Иллюстрации', 'Баннеры', 'Цифровые ресурсы']
-  }];
-  return <section id="portfolio" className="py-20 relative overflow-hidden">
+  
+  const services = [
+    {
+      title: 'Брендинг',
+      description: 'Разработка целостной визуальной идентичности, которая выделяет бренд на рынке',
+      icon: Palette,
+      color: 'from-brand-orange to-brand-red',
+      features: ['Логотип', 'Цветовая схема', 'Типографика', 'Руководство по стилю'],
+      bgClass: 'bg-gradient-to-br from-amber-50 to-orange-50'
+    }, 
+    {
+      title: 'Векторная графика',
+      description: 'Создание масштабируемых векторных иллюстраций и графических элементов',
+      icon: Vectors,
+      color: 'from-brand-indigo to-brand-violet',
+      features: ['Иллюстрации', 'Иконки', 'Инфографика', 'Технические чертежи'],
+      bgClass: 'bg-gradient-to-br from-blue-50 to-indigo-50'
+    }, 
+    {
+      title: 'Графический дизайн',
+      description: 'Создание визуальных материалов, которые эффективно передают сообщение бренда',
+      icon: Layout,
+      color: 'from-brand-turquoise to-brand-blue',
+      features: ['Логотипы', 'Иллюстрации', 'Баннеры', 'Цифровые ресурсы'],
+      bgClass: 'bg-gradient-to-br from-teal-50 to-cyan-50'
+    }
+  ];
+
+  return (
+    <section id="portfolio" className="py-20 relative overflow-hidden">
       <div className="container mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
-        <motion.div initial={{
-        opacity: 0,
-        y: 30
-      }} whileInView={{
-        opacity: 1,
-        y: 0
-      }} transition={{
-        duration: 0.7
-      }} viewport={{
-        once: true
-      }}>
+        <motion.div
+          initial={{opacity: 0, y: 30}}
+          whileInView={{opacity: 1, y: 0}}
+          transition={{duration: 0.7}}
+          viewport={{once: true}}
+        >
           <h2 className="section-title text-center">
             <span className="gradient-text from-brand-orange to-brand-yellow text-fuchsia-300">Кейс-стади</span>
           </h2>
         </motion.div>
         
-        <motion.div className="bg-white rounded-2xl shadow-xl overflow-hidden mt-12" initial={{
-        opacity: 0,
-        y: 40
-      }} whileInView={{
-        opacity: 1,
-        y: 0
-      }} transition={{
-        duration: 0.7,
-        delay: 0.2
-      }} viewport={{
-        once: true
-      }} whileHover={{
-        boxShadow: "0 25px 50px -12px rgba(0, 0, 0, 0.25)"
-      }}>
+        <motion.div 
+          className="bg-white rounded-2xl shadow-xl overflow-hidden mt-12"
+          initial={{opacity: 0, y: 40}}
+          whileInView={{opacity: 1, y: 0}}
+          transition={{duration: 0.7, delay: 0.2}}
+          viewport={{once: true}}
+          whileHover={{boxShadow: "0 25px 50px -12px rgba(0, 0, 0, 0.25)"}}
+        >
           <div className="grid grid-cols-1 lg:grid-cols-2">
             <div className="p-8 lg:p-12">
               <div className="mb-6">
@@ -133,16 +138,13 @@ const CaseStudySection: React.FC = () => {
           </div>
         </motion.div>
         
-        <motion.h3 className="text-3xl font-bold mt-16 mb-4 text-center" initial={{
-        opacity: 0
-      }} whileInView={{
-        opacity: 1
-      }} transition={{
-        duration: 0.5,
-        delay: 0.3
-      }} viewport={{
-        once: true
-      }}>
+        <motion.h3 
+          className="text-3xl font-bold mt-16 mb-4 text-center"
+          initial={{opacity: 0}}
+          whileInView={{opacity: 1}}
+          transition={{duration: 0.5, delay: 0.3}}
+          viewport={{once: true}}
+        >
           <span className="gradient-text from-brand-purple to-brand-blue">Портфолио</span>
         </motion.h3>
         
@@ -197,58 +199,72 @@ const CaseStudySection: React.FC = () => {
         </div>
         
         <div className="mt-16">
-          <motion.h3 className="text-3xl font-bold mb-12 text-center" initial={{
-          opacity: 0
-        }} whileInView={{
-          opacity: 1
-        }} transition={{
-          duration: 0.5
-        }} viewport={{
-          once: true
-        }}>
+          <motion.h3 
+            className="text-3xl font-bold mb-12 text-center"
+            initial={{opacity: 0}}
+            whileInView={{opacity: 1}}
+            transition={{duration: 0.5}}
+            viewport={{once: true}}
+          >
             <span className="gradient-text from-brand-red to-brand-orange">Услуги</span>
           </motion.h3>
           
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-            {services.map((service, index) => <motion.div key={index} initial={{
-            opacity: 0,
-            y: 30
-          }} whileInView={{
-            opacity: 1,
-            y: 0
-          }} transition={{
-            duration: 0.6,
-            delay: index * 0.2
-          }} viewport={{
-            once: true
-          }} whileHover={{
-            y: -10
-          }}>
-                <Card className="bg-white rounded-xl shadow-lg overflow-hidden transform transition-all duration-300 h-full flex flex-col">
-                  
+            {services.map((service, index) => (
+              <motion.div 
+                key={index}
+                initial={{opacity: 0, y: 30}}
+                whileInView={{opacity: 1, y: 0}}
+                transition={{duration: 0.6, delay: index * 0.2}}
+                viewport={{once: true}}
+                whileHover={{y: -10}}
+              >
+                <Card className={`rounded-xl shadow-lg overflow-hidden transform transition-all duration-300 h-full flex flex-col border-0 ${service.bgClass}`}>
+                  <div className="p-1">
+                    <div className={`h-2 w-full rounded-t-xl bg-gradient-to-r ${service.color}`}></div>
+                  </div>
                   
                   <CardContent className="p-6 flex flex-col flex-grow">
-                    <h4 className="text-xl font-bold mb-3">{service.title}</h4>
-                    <p className="text-gray-600 mb-4">{service.description}</p>
+                    <div className="flex items-center gap-3 mb-4">
+                      <div className={`p-3 rounded-lg bg-gradient-to-br ${service.color}`}>
+                        <service.icon className="w-6 h-6 text-white" />
+                      </div>
+                      <h4 className="text-xl font-bold">{service.title}</h4>
+                    </div>
                     
-                    <ul className="space-y-2 mt-auto">
-                      {service.features.map((feature, i) => <li key={i} className="flex items-center text-gray-700">
-                          <Check className="w-4 h-4 text-brand-green mr-2" />
-                          <span>{feature}</span>
-                        </li>)}
-                    </ul>
+                    <p className="text-gray-600 mb-6">{service.description}</p>
                     
-                    <div className="mt-6 pt-4 border-t border-gray-100">
-                      <a href="#contact" className="inline-flex items-center text-brand-blue hover:text-brand-indigo font-medium">
+                    <div className="bg-white/70 rounded-lg p-4 mb-6 backdrop-blur-sm">
+                      <h5 className="text-sm uppercase text-gray-500 font-medium mb-3">Включает</h5>
+                      <ul className="space-y-3 mt-auto">
+                        {service.features.map((feature, i) => (
+                          <li key={i} className="flex items-center text-gray-700">
+                            <div className={`w-6 h-6 rounded-full bg-gradient-to-r ${service.color} flex items-center justify-center mr-3 shrink-0`}>
+                              <Check className="w-4 h-4 text-white" />
+                            </div>
+                            <span>{feature}</span>
+                          </li>
+                        ))}
+                      </ul>
+                    </div>
+                    
+                    <div className="mt-auto pt-4">
+                      <a 
+                        href="#contact" 
+                        className={`inline-flex items-center font-medium py-2 px-4 rounded-md bg-white border border-gray-200 hover:border-transparent hover:bg-gradient-to-r ${service.color} hover:text-white transition-colors duration-300`}
+                      >
                         Заказать услугу <ArrowRight className="w-4 h-4 ml-2" />
                       </a>
                     </div>
                   </CardContent>
                 </Card>
-              </motion.div>)}
+              </motion.div>
+            ))}
           </div>
         </div>
       </div>
-    </section>;
+    </section>
+  );
 };
+
 export default CaseStudySection;

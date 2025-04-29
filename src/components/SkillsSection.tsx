@@ -40,19 +40,22 @@ const SkillsSection: React.FC = () => {
       title: 'Брендинг и Айдентика',
       description: 'Создание уникальных визуальных идентичностей, которые выделяют бренд на рынке',
       color: 'from-brand-red to-brand-brick',
-      stats: '10+ брендов'
+      stats: '10+ брендов',
+      bgClass: 'bg-gradient-to-br from-red-50 to-orange-50'
     },
     {
       title: 'Графический Дизайн',
       description: 'Разработка привлекательных визуальных материалов для печати и цифровых платформ',
       color: 'from-brand-gold to-brand-orange',
-      stats: '200+ работ'
+      stats: '200+ работ',
+      bgClass: 'bg-gradient-to-br from-amber-50 to-yellow-50'
     }, 
     {
       title: 'Маркетинговые Материалы',
       description: 'Дизайн, который помогает достигать конкретных бизнес-целей и увеличивать продажи',
       color: 'from-brand-blue to-brand-indigo',
-      stats: '+40% конверсия'
+      stats: '+40% конверсия',
+      bgClass: 'bg-gradient-to-br from-blue-50 to-indigo-50'
     }
   ];
 
@@ -155,13 +158,15 @@ const SkillsSection: React.FC = () => {
                 viewport={{ once: true }}
                 whileHover={{ y: -5 }}
               >
-                <Card className="hover:shadow-xl transition-all duration-300 transform hover:scale-105 border-none bg-white h-full">
+                <Card className={`hover:shadow-xl transition-all duration-300 transform hover:scale-105 border-none ${skill.bgClass} h-full`}>
                   <CardContent className="p-6 h-full flex flex-col">
                     <div className={`h-2 w-24 bg-gradient-to-r ${skill.color} rounded-full mb-4`}></div>
                     <h4 className="text-xl font-bold mb-3">{skill.title}</h4>
                     <p className="text-gray-600 mb-auto">{skill.description}</p>
-                    <div className="flex items-center mt-4 text-gray-700 font-medium">
-                      <Award className="w-5 h-5 mr-2 text-brand-red" />
+                    <div className="flex items-center mt-6 text-gray-700 font-medium">
+                      <div className={`p-2 rounded-full bg-gradient-to-r ${skill.color} mr-3`}>
+                        <Award className="w-5 h-5 text-white" />
+                      </div>
                       {skill.stats}
                     </div>
                   </CardContent>
