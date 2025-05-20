@@ -88,16 +88,22 @@ const CaseStudySection: React.FC = () => {
             </div>
             
             <div className="relative overflow-hidden bg-gradient-to-r from-gray-100 to-gray-200 flex items-center justify-center">
-              <motion.div className="grid grid-cols-2 gap-4 p-8 transform" whileHover={{
-              scale: 1.05
-            }} transition={{
-              type: "spring",
-              stiffness: 300,
-              damping: 20
-            }}>
-                <img src="/lovable-uploads/7974d94d-9815-47bc-8f99-2452fbc93db1.png" alt="Pocus Moscow" className="rounded-lg shadow-md hover:shadow-xl transition-shadow duration-300 w-full h-auto object-cover" />
-                <img src="/lovable-uploads/5e992c69-26e7-4020-bc0f-b9ae8a22a258.png" alt="Pocus Moscow Logo" className="rounded-lg shadow-md hover:shadow-xl transition-shadow duration-300 w-full h-auto object-cover" />
-                <img src="/lovable-uploads/b272c2be-69dd-42d2-b753-3ec20fd016c9.png" alt="Pocus Moscow Design" className="rounded-lg shadow-md hover:shadow-xl transition-shadow duration-300 w-full h-auto object-cover col-span-2" />
+              <motion.div 
+                className="p-8 transform" 
+                whileHover={{
+                  scale: 1.05
+                }} 
+                transition={{
+                  type: "spring",
+                  stiffness: 300,
+                  damping: 20
+                }}
+              >
+                <img 
+                  src="/lovable-uploads/30ec6484-b3cd-47d0-922b-1245672d998e.png" 
+                  alt="Pocus Moscow" 
+                  className="rounded-lg shadow-md hover:shadow-xl transition-shadow duration-300 w-full h-auto object-cover"
+                />
               </motion.div>
             </div>
           </div>
