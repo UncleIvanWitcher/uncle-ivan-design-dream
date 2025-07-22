@@ -12,7 +12,7 @@ const ContactButton: React.FC = () => {
         <Send className="w-5 h-5 mr-2" />
         <span className="flex flex-col">
           <span className="text-sm">Телеграм:</span>
-          <span className="font-bold">@UNCLEIVANINC</span>
+          <span className="font-bold">@UncleIvanINCo</span>
         </span>
       </button>
     </div>
