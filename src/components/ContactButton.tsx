@@ -13,7 +13,7 @@ const ContactButton: React.FC = () => {
       >
         <Instagram className="w-5 h-5 mr-2" />
         <span className="flex flex-col">
-          <span className="text-sm">Instagram:</span>
+          <span className="text-sm">Телеграм:</span>
           <span className="font-bold">@UNCLEIVANINC</span>
         </span>
       </a>
