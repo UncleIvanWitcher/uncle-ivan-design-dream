@@ -107,15 +107,13 @@ const TestimonialsSection: React.FC = () => {
           viewport={{ once: true }}
           className="mt-16 text-center"
         >
-          <a 
-            href="https://t.me/UncleIvanWitcher" 
-            target="_blank" 
-            rel="noopener noreferrer"
+          <button 
+            onClick={() => document.getElementById('contacts')?.scrollIntoView({ behavior: 'smooth' })}
             className="inline-flex items-center bg-brand-blue hover:bg-brand-indigo text-white rounded-lg px-6 py-3 font-medium transition-all duration-300 transform hover:scale-105 shadow-lg"
           >
             <MessageSquare className="w-5 h-5 mr-2" />
             Стать следующим довольным клиентом
-          </a>
+          </button>
         </motion.div>
       </div>
     </section>

@@ -75,17 +75,15 @@ const StickyHeader: React.FC = () => {
                 </motion.a>
               </div>
               
-              <motion.a 
-                href="https://t.me/UncleIvanWitcher" 
-                target="_blank" 
-                rel="noopener noreferrer"
+              <motion.button 
+                onClick={() => document.getElementById('contacts')?.scrollIntoView({ behavior: 'smooth' })}
                 className="bg-brand-red text-white rounded-lg px-4 py-2 flex items-center justify-center hover:bg-red-700 transition-all duration-300"
                 whileHover={{ scale: 1.05 }}
                 whileTap={{ scale: 0.95 }}
               >
                 <MessageSquare className="w-4 h-4 mr-2" />
                 <span>Связаться</span>
-              </motion.a>
+              </motion.button>
               
               <button 
                 className="md:hidden text-gray-700 focus:outline-none"

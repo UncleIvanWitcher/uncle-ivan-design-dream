@@ -81,9 +81,12 @@ const CaseStudySection: React.FC = () => {
                   которые помогли компании выделиться на рынке и привлечь новую аудиторию.
                 </p>
                 
-                <a href="https://t.me/UncleIvanWitcher" target="_blank" rel="noopener noreferrer" className="inline-flex items-center text-brand-red hover:text-brand-brick font-bold transition-colors">
+                <button 
+                  onClick={() => document.getElementById('contacts')?.scrollIntoView({ behavior: 'smooth' })}
+                  className="inline-flex items-center text-brand-red hover:text-brand-brick font-bold transition-colors"
+                >
                   Заказать подобный проект <ExternalLink className="w-5 h-5 ml-2" />
-                </a>
+                </button>
               </div>
             </div>
             
@@ -242,14 +245,12 @@ const CaseStudySection: React.FC = () => {
             transition={{duration: 0.6}}
             viewport={{once: true}}
           >
-            <a 
-              href="https://t.me/UncleIvanWitcher" 
-              target="_blank" 
-              rel="noopener noreferrer"
+            <button 
+              onClick={() => document.getElementById('contacts')?.scrollIntoView({ behavior: 'smooth' })}
               className="inline-flex items-center bg-gradient-to-r from-brand-orange to-brand-red text-white font-medium py-3 px-6 rounded-lg hover:shadow-lg transition-all duration-300 hover:scale-105"
             >
               Обсудить индивидуальный проект <ArrowRight className="w-5 h-5 ml-2" />
-            </a>
+            </button>
           </motion.div>
         </div>
       </div>

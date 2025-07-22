@@ -6,19 +6,19 @@ import { Button } from '@/components/ui/button';
 
 const AboutSection: React.FC = () => {
   const advantages = [
-    'Точное следование брифу и техническому заданию',
-    'Глубокое понимание маркетинговых стратегий',
-    'Уникальный подход к каждому проекту',
-    'Быстрое выполнение заказов любой сложности',
-    'Неограниченное количество правок до полного утверждения',
-    'Понимание тенденций современного дизайна'
+    'Стратегический подход к каждому проекту — анализируем рынок и конкурентов',
+    'Глубокое погружение в бизнес клиента для создания релевантных решений',
+    'Уникальная айдентика, которая выделяет бренд среди конкурентов',
+    'Комплексный подход: от логотипа до полного фирменного стиля',
+    'Неограниченное количество правок до полного утверждения результата',
+    'Постпроектное сопровождение и консультации по развитию бренда'
   ];
 
   const stats = [
-    { icon: Trophy, value: '100+', label: 'проектов', color: 'from-brand-orange to-brand-amber' },
-    { icon: Calendar, value: '1+', label: 'год опыта', color: 'from-brand-indigo to-brand-azure' },
-    { icon: Award, value: '90%', label: 'повторных обращений', color: 'from-brand-red to-brand-brick' },
-    { icon: Clock, value: '24/7', label: 'поддержка клиентов', color: 'from-brand-violet to-brand-purple' }
+    { icon: Trophy, value: '1', label: 'сильный проект', color: 'from-brand-orange to-brand-amber' },
+    { icon: Calendar, value: '2+', label: 'года опыта', color: 'from-brand-indigo to-brand-azure' },
+    { icon: Award, value: '100%', label: 'качество работ', color: 'from-brand-red to-brand-brick' },
+    { icon: Clock, value: '24/7', label: 'поддержка', color: 'from-brand-violet to-brand-purple' }
   ];
 
   return (
@@ -51,8 +51,8 @@ const AboutSection: React.FC = () => {
                 <div className="relative">
                   <img 
                     alt="Uncle Ivan" 
-                    className="w-24 h-24 rounded-full border-4 border-brand-red shadow-lg" 
-                    src="/lovable-uploads/c1b431b3-f138-4d2c-9f26-0e1e7b85e626.jpg" 
+                    className="w-24 h-24 rounded-full border-4 border-brand-red shadow-lg object-cover" 
+                    src="/lovable-uploads/5405f1cb-6f28-4eed-9b97-3435cc723e5b.png" 
                   />
                   <motion.div 
                     className="absolute -bottom-2 -right-2 bg-white rounded-full p-1 shadow-md"
@@ -64,19 +64,36 @@ const AboutSection: React.FC = () => {
                 </div>
                 
                 <div>
-                  <h3 className="text-2xl font-bold mb-2">Иван</h3>
-                  <div className="flex items-center">
+                  <h3 className="text-2xl font-bold mb-2 bg-gradient-to-r from-brand-red to-brand-orange bg-clip-text text-transparent">Uncle Ivan</h3>
+                  <div className="flex items-center mb-2">
                     <Globe className="w-4 h-4 text-gray-500 mr-2" />
-                    <p className="text-gray-600">Графический дизайнер</p>
+                    <p className="text-gray-600 font-medium">Графический дизайнер & Бренд-стратег</p>
+                  </div>
+                  <div className="inline-flex items-center px-3 py-1 bg-gradient-to-r from-brand-blue/10 to-brand-indigo/10 rounded-full">
+                    <span className="text-sm font-semibold text-brand-blue">Основатель UncleIvan Inc.</span>
                   </div>
                 </div>
               </div>
               
-              <p className="text-lg mb-6">
-                Я, Иван, занимаюсь дизайном более года, выполнил 300+ работ. Специализация: графический дизайн. 
-                Мои преимущества: точность, прагматизм, эффективность, проницательность.
-                Работаю с брендами любого масштаба - от стартапов до крупных компаний.
-              </p>
+              <div className="space-y-4 mb-6">
+                <p className="text-lg font-medium text-gray-800 leading-relaxed">
+                  Привет! Меня зовут Иван, и я основатель креативной студии <span className="font-bold text-brand-red">UncleIvan Inc.</span> 
+                  Я занимаюсь созданием брендов, которые остаются в памяти и работают на результат.
+                </p>
+                
+                <p className="text-gray-700 leading-relaxed">
+                  За свою карьеру я понял: успешный бренд — это не просто красивая картинка. Это система, которая 
+                  решает реальные бизнес-задачи. Моя команда и я создаём айдентику, которая увеличивает продажи 
+                  и формирует лояльность клиентов.
+                </p>
+                
+                <div className="bg-gradient-to-r from-brand-yellow/20 to-brand-orange/10 rounded-lg p-4 border-l-4 border-brand-orange">
+                  <p className="text-gray-800 font-medium">
+                    <strong>Наша философия:</strong> Один сильный проект лучше сотни посредственных. 
+                    Мы работаем с каждым клиентом как с единственным, вкладывая максимум креатива и экспертизы.
+                  </p>
+                </div>
+              </div>
               
               <div className="grid grid-cols-2 md:grid-cols-4 gap-4 mb-6">
                 {stats.map((stat, index) => (
@@ -106,7 +123,7 @@ const AboutSection: React.FC = () => {
               >
                 <Button 
                   onClick={() => document.getElementById('contact')?.scrollIntoView({ behavior: 'smooth' })}
-                  className="w-full bg-gradient-to-r from-brand-red to-brand-brick text-white hover:opacity-90 transition-opacity"
+                  className="w-full bg-gradient-to-r from-brand-red to-brand-brick text-white hover:opacity-90 transition-all duration-300 hover:scale-105 shadow-lg"
                 >
                   Связаться для консультации
                 </Button>
@@ -122,7 +139,9 @@ const AboutSection: React.FC = () => {
             viewport={{ once: true }}
           >
             <div className="bg-white rounded-xl shadow-xl p-8 h-full">
-              <h3 className="text-2xl font-bold mb-6">Мои преимущества</h3>
+              <h3 className="text-2xl font-bold mb-6 bg-gradient-to-r from-brand-purple to-brand-blue bg-clip-text text-transparent">
+                Почему выбирают нас
+              </h3>
               
               <ul className="space-y-4">
                 {advantages.map((item, index) => (
@@ -151,12 +170,16 @@ const AboutSection: React.FC = () => {
                   viewport={{ once: true }}
                   className="p-6 bg-gradient-to-r from-brand-indigo/10 to-brand-blue/5 rounded-lg"
                 >
-                  <h4 className="font-bold mb-2 flex items-center">
-                    <Award className="w-5 h-5 mr-2 text-brand-blue" />
-                    Профессиональный подход
+                  <h4 className="font-bold mb-3 flex items-center text-lg">
+                    <Award className="w-6 h-6 mr-2 text-brand-blue" />
+                    UncleIvan Inc. — Больше чем дизайн
                   </h4>
-                  <p className="text-gray-700">
-                    Каждый проект - это не просто работа, а возможность создать что-то уникальное, что поможет вашему бизнесу выделиться среди конкурентов и достичь новых высот.
+                  <p className="text-gray-700 leading-relaxed mb-3">
+                    Мы не просто создаём красивые логотипы. Мы выстраиваем стратегию бренда, которая 
+                    увеличивает узнаваемость, доверие клиентов и, как следствие, прибыль бизнеса.
+                  </p>
+                  <p className="text-sm text-gray-600 font-medium">
+                    💡 Каждый бренд уникален, поэтому каждое решение создаётся с нуля под конкретные задачи и целевую аудиторию.
                   </p>
                 </motion.div>
               </div>

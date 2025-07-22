@@ -44,17 +44,15 @@ const Header: React.FC = () => {
             </p>
             
             <div className="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start">
-              <motion.a 
-                href="https://t.me/UncleIvanWitcher" 
-                target="_blank" 
-                rel="noopener noreferrer"
+              <motion.button 
                 className="inline-flex items-center justify-center bg-brand-red text-white hover:bg-red-700 font-bold py-3 px-6 rounded-lg transition-all duration-300 shadow-lg"
                 whileHover={{ scale: 1.05 }}
                 whileTap={{ scale: 0.95 }}
+                onClick={() => document.getElementById('contacts')?.scrollIntoView({ behavior: 'smooth' })}
               >
                 <MessageSquare className="w-5 h-5 mr-2" />
                 Заказать проект
-              </motion.a>
+              </motion.button>
               
               <motion.button 
                 className="bg-white border-2 border-brand-red text-brand-red hover:bg-brand-red hover:text-white font-bold py-3 px-6 rounded-lg transition-all duration-300 shadow-lg"
@@ -84,7 +82,7 @@ const Header: React.FC = () => {
           >
             <div className="absolute top-0 right-0 w-32 h-32 bg-brand-yellow rounded-full opacity-30 -z-10"></div>
             <div className="absolute -bottom-10 -left-10 w-32 h-32 bg-brand-blue rounded-full opacity-30 -z-10"></div>
-            <img alt="Uncle Ivan" className="rounded-xl shadow-2xl z-10 relative max-w-full" loading="lazy" src="/lovable-uploads/2a6b4a7a-a882-4872-a911-ffe2da639211.png" />
+            <img alt="Uncle Ivan" className="rounded-xl shadow-2xl z-10 relative max-w-full" loading="lazy" src="/lovable-uploads/5405f1cb-6f28-4eed-9b97-3435cc723e5b.png" />
           </motion.div>
         </div>
       </div>
