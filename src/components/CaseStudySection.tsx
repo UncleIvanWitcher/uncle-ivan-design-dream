@@ -6,30 +6,33 @@ import { Button } from '@/components/ui/button';
 import { motion } from 'framer-motion';
 
 const CaseStudySection: React.FC = () => {
-  const services = [
+  const mainServices = [
     {
-      title: 'Брендинг',
-      description: 'Разработка целостной визуальной идентичности, которая выделяет бренд на рынке',
-      icon: Palette,
-      color: 'from-brand-orange to-brand-red',
-      features: ['Логотип', 'Цветовая схема', 'Типографика', 'Руководство по стилю'],
-      bgClass: 'bg-gradient-to-br from-amber-50 to-orange-50'
-    }, 
+      title: 'Решение проблем с продажами',
+      description: 'Анализируем и устраняем причины низких продаж через комплексный подход',
+      icon: TrendingUp,
+      color: 'from-brand-red to-brand-orange',
+      features: ['Анализ воронки продаж', 'Оптимизация конверсии', 'A/B тестирование', 'Аналитика результатов'],
+      bgClass: 'bg-gradient-to-br from-red-50 to-orange-50'
+    },
     {
-      title: 'Векторная графика',
-      description: 'Создание масштабируемых векторных иллюстраций и графических элементов',
-      icon: Layout,
-      color: 'from-brand-indigo to-brand-violet',
-      features: ['Иллюстрации', 'Иконки', 'Инфографика', 'Технические чертежи'],
+      title: 'Повышение узнаваемости бренда',
+      description: 'Создаем запоминающийся образ, который выделяет вас среди конкурентов',
+      icon: ExternalLink,
+      color: 'from-brand-indigo to-brand-blue',
+      features: ['Позиционирование', 'Стратегия коммуникации', 'Увеличение охвата', 'Работа с репутацией'],
       bgClass: 'bg-gradient-to-br from-blue-50 to-indigo-50'
-    }, 
+    }
+  ];
+
+  const designTools = [
     {
-      title: 'Графический дизайн',
-      description: 'Создание визуальных материалов, которые эффективно передают сообщение бренда',
-      icon: Layout,
-      color: 'from-brand-turquoise to-brand-blue',
-      features: ['Логотипы', 'Иллюстрации', 'Баннеры', 'Цифровые ресурсы'],
-      bgClass: 'bg-gradient-to-br from-teal-50 to-cyan-50'
+      title: 'Брендинг и дизайн',
+      description: 'Инструменты для достижения ваших бизнес-целей',
+      icon: Palette,
+      color: 'from-brand-turquoise to-brand-violet',
+      features: ['Логотип и фирстиль', 'Маркетинговые материалы', 'Веб-дизайн', 'Упаковка'],
+      bgClass: 'bg-gradient-to-br from-teal-50 to-violet-50'
     }
   ];
 
@@ -171,18 +174,22 @@ const CaseStudySection: React.FC = () => {
           </motion.h3>
           
           <motion.p
-            className="text-lg text-gray-600 text-center mb-12 max-w-2xl mx-auto"
+            className="text-lg text-gray-600 text-center mb-8 max-w-3xl mx-auto"
             initial={{opacity: 0}}
             whileInView={{opacity: 1}}
             transition={{duration: 0.5, delay: 0.2}}
             viewport={{once: true}}
           >
-            Предлагаю широкий спектр услуг в сфере графического дизайна и брендинга, 
-            чтобы помочь вашему бизнесу выделиться на рынке
+            Наша главная специализация — решение проблем бизнесов с продажами и узнаваемостью. 
+            Брендинг и дизайн — это наши инструменты для достижения ваших целей.
           </motion.p>
-          
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-            {services.map((service, index) => (
+
+          <div className="mb-12">
+            <h4 className="text-2xl font-bold text-center mb-8">
+              <span className="gradient-text from-brand-red to-brand-orange">Основные направления</span>
+            </h4>
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mb-12">
+              {mainServices.map((service, index) => (
               <motion.div 
                 key={index}
                 initial={{opacity: 0, y: 30}}
@@ -193,28 +200,28 @@ const CaseStudySection: React.FC = () => {
               >
                 <Card className={`rounded-xl shadow-lg overflow-hidden transform transition-all duration-300 h-full flex flex-col border-0 ${service.bgClass}`}>
                   <div className="p-1">
-                    <div className={`h-2 w-full rounded-t-xl bg-gradient-to-r ${service.color}`}></div>
+                    <div className={`h-3 w-full rounded-t-xl bg-gradient-to-r ${service.color}`}></div>
                   </div>
                   
-                  <CardContent className="p-6 flex flex-col flex-grow">
-                    <div className="flex items-center gap-3 mb-5">
-                      <div className={`p-3 rounded-lg bg-gradient-to-br ${service.color}`}>
-                        <service.icon className="w-6 h-6 text-white" />
+                  <CardContent className="p-8 flex flex-col flex-grow">
+                    <div className="flex items-center gap-4 mb-6">
+                      <div className={`p-4 rounded-xl bg-gradient-to-br ${service.color} shadow-lg`}>
+                        <service.icon className="w-8 h-8 text-white" />
                       </div>
-                      <h4 className="text-xl font-bold">{service.title}</h4>
+                      <h4 className="text-2xl font-bold">{service.title}</h4>
                     </div>
                     
-                    <p className="text-gray-600 mb-6">{service.description}</p>
+                    <p className="text-gray-600 mb-8 text-lg">{service.description}</p>
                     
-                    <div className="bg-white/70 rounded-lg p-4 mb-6 backdrop-blur-sm">
-                      <h5 className="text-sm uppercase text-gray-500 font-medium mb-3">Включает</h5>
-                      <ul className="space-y-3 mt-auto">
+                    <div className="bg-white/80 rounded-xl p-6 mb-8 backdrop-blur-sm border border-gray-100">
+                      <h5 className="text-sm uppercase text-gray-500 font-semibold mb-4 tracking-wide">Что включено</h5>
+                      <ul className="space-y-4">
                         {service.features.map((feature, i) => (
                           <li key={i} className="flex items-center text-gray-700">
-                            <div className={`w-6 h-6 rounded-full bg-gradient-to-r ${service.color} flex items-center justify-center mr-3 shrink-0`}>
+                            <div className={`w-7 h-7 rounded-full bg-gradient-to-r ${service.color} flex items-center justify-center mr-4 shrink-0 shadow-md`}>
                               <Check className="w-4 h-4 text-white" />
                             </div>
-                            <span>{feature}</span>
+                            <span className="font-medium">{feature}</span>
                           </li>
                         ))}
                       </ul>
@@ -225,21 +232,61 @@ const CaseStudySection: React.FC = () => {
                       whileHover={{ scale: 1.03 }}
                       transition={{ type: "spring", stiffness: 400, damping: 10 }}
                     >
-                      <a 
-                        href="#contact" 
-                        className={`inline-flex items-center font-medium py-2 px-4 rounded-md bg-white border border-gray-200 hover:border-transparent hover:bg-gradient-to-r ${service.color} hover:text-white transition-colors duration-300`}
+                      <button 
+                        onClick={() => document.getElementById('contacts')?.scrollIntoView({ behavior: 'smooth' })}
+                        className={`inline-flex items-center font-bold py-3 px-6 rounded-lg bg-white border-2 border-gray-200 hover:border-transparent hover:bg-gradient-to-r ${service.color} hover:text-white transition-all duration-300 hover:shadow-lg w-full justify-center`}
                       >
-                        Заказать услугу <ArrowRight className="w-4 h-4 ml-2" />
-                      </a>
+                        Решить проблему <ArrowRight className="w-5 h-5 ml-2" />
+                      </button>
                     </motion.div>
                   </CardContent>
                 </Card>
               </motion.div>
             ))}
+            </div>
+          </div>
+
+          <div className="mb-8">
+            <h4 className="text-xl font-bold text-center mb-6 text-gray-500">
+              Инструменты для достижения целей
+            </h4>
+            <div className="grid grid-cols-1 gap-6">
+              {designTools.map((service, index) => (
+                <motion.div 
+                  key={index}
+                  initial={{opacity: 0, y: 20}}
+                  whileInView={{opacity: 1, y: 0}}
+                  transition={{duration: 0.6, delay: 0.1}}
+                  viewport={{once: true}}
+                  whileHover={{y: -5}}
+                >
+                  <Card className={`rounded-xl shadow-md overflow-hidden transform transition-all duration-300 border-0 ${service.bgClass}`}>
+                    <CardContent className="p-6">
+                      <div className="flex items-center gap-3 mb-4">
+                        <div className={`p-3 rounded-lg bg-gradient-to-br ${service.color}`}>
+                          <service.icon className="w-6 h-6 text-white" />
+                        </div>
+                        <h4 className="text-lg font-bold">{service.title}</h4>
+                      </div>
+                      
+                      <p className="text-gray-600 mb-4">{service.description}</p>
+                      
+                      <div className="flex flex-wrap gap-2">
+                        {service.features.map((feature, i) => (
+                          <span key={i} className="px-3 py-1 bg-white/70 rounded-full text-sm text-gray-700 border border-gray-200">
+                            {feature}
+                          </span>
+                        ))}
+                      </div>
+                    </CardContent>
+                  </Card>
+                </motion.div>
+              ))}
+            </div>
           </div>
           
           <motion.div 
-            className="mt-16 text-center"
+            className="mt-12 text-center"
             initial={{opacity: 0, y: 20}}
             whileInView={{opacity: 1, y: 0}}
             transition={{duration: 0.6}}
@@ -247,9 +294,9 @@ const CaseStudySection: React.FC = () => {
           >
             <button 
               onClick={() => document.getElementById('contacts')?.scrollIntoView({ behavior: 'smooth' })}
-              className="inline-flex items-center bg-gradient-to-r from-brand-orange to-brand-red text-white font-medium py-3 px-6 rounded-lg hover:shadow-lg transition-all duration-300 hover:scale-105"
+              className="inline-flex items-center bg-gradient-to-r from-brand-red to-brand-orange text-white font-bold py-4 px-8 rounded-xl hover:shadow-xl transition-all duration-300 hover:scale-105 text-lg"
             >
-              Обсудить индивидуальный проект <ArrowRight className="w-5 h-5 ml-2" />
+              Получить бесплатную консультацию <ArrowRight className="w-5 h-5 ml-2" />
             </button>
           </motion.div>
         </div>
