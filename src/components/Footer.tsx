@@ -1,5 +1,5 @@
 import React from 'react';
-import { Mail, Phone, MapPin, Send } from 'lucide-react';
+import { Mail, Phone, MapPin, Instagram } from 'lucide-react';
 import { motion } from 'framer-motion';
 const Footer: React.FC = () => {
   return <footer id="contact" className="bg-gradient-to-b from-gray-50 to-gray-100 pt-20 pb-10 relative overflow-hidden">
@@ -15,10 +15,10 @@ const Footer: React.FC = () => {
       }} viewport={{
         once: true
       }}>
-            <div className="bg-gradient-to-br from-brand-blue via-brand-indigo to-brand-violet p-12 text-white" id="contacts">
-            <h3 className="text-3xl font-bold mb-6">Связаться с Uncle Ivan</h3>
-            <p className="mb-8 text-white/80 text-lg">
-              Готовы создать сильный бренд? Свяжитесь со мной для бесплатной консультации и обсуждения вашего проекта.
+          <div className="bg-gradient-to-br from-brand-blue via-brand-indigo to-brand-violet p-12 text-white">
+            <h3 className="text-3xl font-bold mb-6">Связаться со мной</h3>
+            <p className="mb-8 text-white/80">
+              Готовы обсудить свой проект? Свяжитесь со мной любым удобным способом.
             </p>
             
             <div className="space-y-6">
@@ -48,18 +48,6 @@ const Footer: React.FC = () => {
               
               <div className="flex items-center">
                 <div className="w-12 h-12 rounded-full bg-white/10 flex items-center justify-center mr-4">
-                  <Send className="w-5 h-5 text-white" />
-                </div>
-                <div>
-                  <p className="text-sm text-white/70">Telegram</p>
-                  <a href="https://t.me/UncleIvanINCo" target="_blank" rel="noopener noreferrer" className="hover:text-white/80 transition-colors font-medium">
-                    @UncleIvanINCo
-                  </a>
-                </div>
-              </div>
-              
-              <div className="flex items-center">
-                <div className="w-12 h-12 rounded-full bg-white/10 flex items-center justify-center mr-4">
                   <MapPin className="w-5 h-5 text-white" />
                 </div>
                 <div>
@@ -83,16 +71,10 @@ const Footer: React.FC = () => {
             <h3 className="text-2xl font-bold gradient-text from-brand-blue to-brand-violet">Uncle Ivan</h3>
           </div>
           
-          <p className="text-gray-600 mb-4">Комплексное решение проблем для ЛЮБОГО бизнеса</p>
-          <p className="text-gray-500 text-sm">© 2025 UncleIvan Inc. Все права защищены.</p>
+          <p className="text-gray-600">Творческое видение, реальные результаты. © 2025 Uncle Ivan. Все права защищены.</p>
           
-          <div className="mt-6 flex justify-center space-x-6">
-            <a href="https://t.me/UncleIvanINCo" target="_blank" rel="noopener noreferrer" className="text-brand-blue hover:text-brand-indigo transition-colors font-medium">
-              Telegram: @UncleIvanINCo
-            </a>
-            <a href="https://www.instagram.com/uncleivaninc/" target="_blank" rel="noopener noreferrer" className="text-brand-purple hover:text-brand-violet transition-colors font-medium">
-              Instagram: @uncleivaninc
-            </a>
+          <div className="mt-4">
+            
           </div>
         </div>
       </div>
