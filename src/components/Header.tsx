@@ -34,8 +34,13 @@ const Header: React.FC = () => {
               <span className="gradient-text from-brand-yellow to-brand-orange">Реальные Результаты</span>
             </h2>
             
-            <p className="text-xl mb-10 max-w-xl mx-auto lg:mx-0">
-              Превратите ваш бренд в историю, которую захотят рассказывать. Графический дизайн, брендинг, айдентика.
+            <p className="text-xl mb-4 max-w-xl mx-auto lg:mx-0 text-gray-800 font-semibold">
+              Комплексное решение проблем для ЛЮБОГО бизнеса
+            </p>
+            
+            <p className="text-lg mb-10 max-w-xl mx-auto lg:mx-0 text-gray-600">
+              Бесплатная консультация, затем готовое решение от нашей команды.
+              Превратите ваш бренд в историю, которую захотят рассказывать.
             </p>
             
             <div className="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start">
