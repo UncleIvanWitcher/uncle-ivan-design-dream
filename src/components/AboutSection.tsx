@@ -122,7 +122,7 @@ const AboutSection: React.FC = () => {
                 viewport={{ once: true }}
               >
                 <Button 
-                  onClick={() => document.getElementById('contact')?.scrollIntoView({ behavior: 'smooth' })}
+                  onClick={() => document.getElementById('contacts')?.scrollIntoView({ behavior: 'smooth' })}
                   className="w-full bg-gradient-to-r from-brand-red to-brand-brick text-white hover:opacity-90 transition-all duration-300 hover:scale-105 shadow-lg"
                 >
                   Связаться для консультации

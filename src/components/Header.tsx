@@ -77,12 +77,12 @@ const Header: React.FC = () => {
         }}>
             <div className="absolute top-0 right-0 w-32 h-32 bg-brand-yellow rounded-full opacity-30 -z-10"></div>
             <div className="absolute -bottom-10 -left-10 w-32 h-32 bg-brand-blue rounded-full opacity-30 -z-10"></div>
-            <img alt="Uncle Ivan" className="rounded-xl shadow-2xl z-10 relative max-w-full" loading="lazy" src="/lovable-uploads/5405f1cb-6f28-4eed-9b97-3435cc723e5b.png" />
+            <img alt="Uncle Ivan" className="rounded-xl shadow-2xl z-10 relative max-w-full w-80 h-auto object-cover" loading="lazy" src="/lovable-uploads/5405f1cb-6f28-4eed-9b97-3435cc723e5b.png" />
           </motion.div>
         </div>
       </div>
       
-      <motion.div className="absolute bottom-10 left-1/2 transform -translate-x-1/2" animate={{
+      <motion.div className="absolute bottom-10 left-1/2 transform -translate-x-1/2 z-20" animate={{
       y: [0, 10, 0]
     }} transition={{
       repeat: Infinity,
