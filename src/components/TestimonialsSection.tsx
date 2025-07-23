@@ -59,7 +59,7 @@ const TestimonialsSection: React.FC = () => {
           viewport={{ once: true }}
         >
           <h2 className="section-title text-center">
-            <span className="gradient-text from-brand-amber to-brand-red">Отзывы Клиентов</span>
+            <span className="gradient-text from-[hsl(var(--brand-secondary))] to-[hsl(var(--brand-primary))]">Отзывы Клиентов</span>
           </h2>
           
           <p className="text-xl text-center max-w-2xl mx-auto mb-12">
@@ -109,7 +109,7 @@ const TestimonialsSection: React.FC = () => {
         >
           <button 
             onClick={() => document.getElementById('contacts')?.scrollIntoView({ behavior: 'smooth' })}
-            className="inline-flex items-center bg-brand-blue hover:bg-brand-indigo text-white rounded-lg px-6 py-3 font-medium transition-all duration-300 transform hover:scale-105 shadow-lg"
+            className="inline-flex items-center bg-[hsl(var(--brand-tertiary))] hover:bg-[hsl(var(--brand-tertiary)/0.9)] text-white rounded-lg px-6 py-3 font-medium transition-all duration-300 transform hover:scale-105 shadow-lg"
           >
             <MessageSquare className="w-5 h-5 mr-2" />
             Стать следующим довольным клиентом

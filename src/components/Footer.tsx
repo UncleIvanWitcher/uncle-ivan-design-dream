@@ -15,7 +15,7 @@ const Footer: React.FC = () => {
       }} viewport={{
         once: true
       }}>
-          <div className="bg-gradient-to-br from-brand-blue via-brand-indigo to-brand-violet p-12 text-white">
+          <div className="bg-gradient-to-br from-[hsl(var(--brand-tertiary))] via-[hsl(var(--brand-quaternary))] to-[hsl(var(--brand-quaternary)/0.8)] p-12 text-white">
             <h3 className="text-3xl font-bold mb-6">Связаться со мной</h3>
             <p className="mb-8 text-white/80">
               Готовы обсудить свой проект? Свяжитесь со мной любым удобным способом.
@@ -68,7 +68,7 @@ const Footer: React.FC = () => {
             <div className="bg-white w-16 h-16 p-2 rounded-full shadow-md mr-4 flex items-center justify-center">
               <img src="/lovable-uploads/cd7b0a94-9d94-4b25-885c-2736ac7350cd.png" alt="Uncle Ivan Logo" className="w-full h-full object-contain" />
             </div>
-            <h3 className="text-2xl font-bold gradient-text from-brand-blue to-brand-violet">Uncle Ivan</h3>
+            <h3 className="text-2xl font-bold gradient-text from-[hsl(var(--brand-tertiary))] to-[hsl(var(--brand-quaternary))]">Uncle Ivan</h3>
           </div>
           
           <p className="text-gray-600">Творческое видение, реальные результаты. © 2025 Uncle Ivan. Все права защищены.</p>

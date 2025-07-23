@@ -25,9 +25,9 @@ const Header: React.FC = () => {
             </div>
             
             <h2 className="text-5xl md:text-6xl lg:text-7xl font-extrabold mb-8 leading-tight">
-              <span className="gradient-text from-brand-red to-brand-brick">Творческое Видение</span>
+              <span className="gradient-text from-[hsl(var(--brand-primary))] to-[hsl(var(--brand-primary)/0.8)]">Творческое Видение</span>
               <br />
-              <span className="gradient-text from-brand-yellow to-brand-orange">Реальные Результаты</span>
+              <span className="gradient-text from-[hsl(var(--brand-secondary))] to-[hsl(var(--brand-secondary)/0.8)]">Реальные Результаты</span>
             </h2>
             
             <p className="text-xl mb-4 max-w-xl mx-auto lg:mx-0 text-gray-800 font-semibold">
@@ -40,7 +40,7 @@ const Header: React.FC = () => {
             </p>
             
             <div className="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start">
-              <motion.button className="inline-flex items-center justify-center bg-brand-red text-white hover:bg-red-700 font-bold py-3 px-6 rounded-lg transition-all duration-300 shadow-lg" whileHover={{
+              <motion.button className="inline-flex items-center justify-center bg-[hsl(var(--brand-primary))] text-white hover:bg-[hsl(var(--brand-primary)/0.9)] font-bold py-3 px-6 rounded-lg transition-all duration-300 shadow-lg" whileHover={{
               scale: 1.05
             }} whileTap={{
               scale: 0.95
@@ -51,7 +51,7 @@ const Header: React.FC = () => {
                 Заказать проект
               </motion.button>
               
-              <motion.button className="bg-white border-2 border-brand-red text-brand-red hover:bg-brand-red hover:text-white font-bold py-3 px-6 rounded-lg transition-all duration-300 shadow-lg" whileHover={{
+              <motion.button className="bg-white border-2 border-[hsl(var(--brand-primary))] text-[hsl(var(--brand-primary))] hover:bg-[hsl(var(--brand-primary))] hover:text-white font-bold py-3 px-6 rounded-lg transition-all duration-300 shadow-lg" whileHover={{
               scale: 1.05
             }} whileTap={{
               scale: 0.95
@@ -75,8 +75,8 @@ const Header: React.FC = () => {
           duration: 0.5,
           delay: 0.2
         }}>
-            <div className="absolute top-0 right-0 w-32 h-32 bg-brand-yellow rounded-full opacity-30 -z-10"></div>
-            <div className="absolute -bottom-10 -left-10 w-32 h-32 bg-brand-blue rounded-full opacity-30 -z-10"></div>
+            <div className="absolute top-0 right-0 w-32 h-32 bg-[hsl(var(--brand-secondary))] rounded-full opacity-30 -z-10"></div>
+            <div className="absolute -bottom-10 -left-10 w-32 h-32 bg-[hsl(var(--brand-tertiary))] rounded-full opacity-30 -z-10"></div>
             <img alt="Uncle Ivan" className="rounded-xl shadow-2xl z-10 relative max-w-full w-80 h-auto object-cover" loading="lazy" src="/lovable-uploads/5405f1cb-6f28-4eed-9b97-3435cc723e5b.png" />
           </motion.div>
         </div>

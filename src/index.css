@@ -16,8 +16,8 @@
     --popover: 0 0% 100%;
     --popover-foreground: 222.2 84% 4.9%;
 
-    --primary: 222.2 47.4% 11.2%;
-    --primary-foreground: 210 40% 98%;
+    --primary: 345 84% 52%;
+    --primary-foreground: 0 0% 100%;
 
     --secondary: 210 40% 96.1%;
     --secondary-foreground: 222.2 47.4% 11.2%;
@@ -25,8 +25,8 @@
     --muted: 210 40% 96.1%;
     --muted-foreground: 215.4 16.3% 46.9%;
 
-    --accent: 210 40% 96.1%;
-    --accent-foreground: 222.2 47.4% 11.2%;
+    --accent: 27 96% 61%;
+    --accent-foreground: 0 0% 0%;
 
     --destructive: 0 84.2% 60.2%;
     --destructive-foreground: 210 40% 98%;
@@ -34,6 +34,18 @@
     --border: 214.3 31.8% 91.4%;
     --input: 214.3 31.8% 91.4%;
     --ring: 222.2 84% 4.9%;
+
+    /* Единые цвета бренда */
+    --brand-primary: 345 84% 52%;     /* Красный */
+    --brand-secondary: 27 96% 61%;    /* Желтый */
+    --brand-tertiary: 220 70% 65%;    /* Синий */
+    --brand-quaternary: 270 50% 55%;  /* Фиолетовый */
+    
+    /* Градиенты */
+    --gradient-primary: linear-gradient(135deg, hsl(var(--brand-primary)), hsl(345 84% 60%));
+    --gradient-secondary: linear-gradient(135deg, hsl(var(--brand-secondary)), hsl(27 96% 68%));
+    --gradient-tertiary: linear-gradient(135deg, hsl(var(--brand-tertiary)), hsl(220 70% 72%));
+    --gradient-accent: linear-gradient(135deg, hsl(var(--brand-primary)), hsl(var(--brand-secondary)));
 
     --radius: 0.5rem;
   }
@@ -57,11 +69,11 @@
 
 @layer components {
   .btn-primary {
-    @apply bg-brand-red hover:bg-opacity-90 text-white font-bold py-3 px-6 rounded-lg transition-all duration-300 transform hover:scale-105 shadow-lg;
+    @apply bg-[hsl(var(--brand-primary))] hover:bg-[hsl(var(--brand-primary)/0.9)] text-white font-bold py-3 px-6 rounded-lg transition-all duration-300 transform hover:scale-105 shadow-lg;
   }
 
   .btn-secondary {
-    @apply bg-brand-green hover:bg-opacity-90 text-white font-bold py-3 px-6 rounded-lg transition-all duration-300 transform hover:scale-105 shadow-lg;
+    @apply bg-[hsl(var(--brand-secondary))] hover:bg-[hsl(var(--brand-secondary)/0.9)] text-white font-bold py-3 px-6 rounded-lg transition-all duration-300 transform hover:scale-105 shadow-lg;
   }
 
   .shape {

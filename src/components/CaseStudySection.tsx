@@ -54,7 +54,7 @@ const CaseStudySection: React.FC = () => {
           viewport={{once: true}}
         >
           <h2 className="section-title text-center">
-            <span className="gradient-text from-brand-orange to-brand-yellow text-fuchsia-300">Кейс-стади</span>
+            <span className="gradient-text from-[hsl(var(--brand-secondary))] to-[hsl(var(--brand-primary))]">Кейс-стади</span>
           </h2>
         </motion.div>
         

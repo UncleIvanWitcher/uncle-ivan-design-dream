@@ -15,10 +15,10 @@ const AboutSection: React.FC = () => {
   ];
 
   const stats = [
-    { icon: Trophy, value: '1', label: 'сильный проект', color: 'from-brand-orange to-brand-amber' },
-    { icon: Calendar, value: '2+', label: 'года опыта', color: 'from-brand-indigo to-brand-azure' },
-    { icon: Award, value: '100%', label: 'качество работ', color: 'from-brand-red to-brand-brick' },
-    { icon: Clock, value: '24/7', label: 'поддержка', color: 'from-brand-violet to-brand-purple' }
+    { icon: Trophy, value: '1', label: 'сильный проект', color: 'from-[hsl(var(--brand-secondary))] to-[hsl(var(--brand-secondary)/0.8)]' },
+    { icon: Calendar, value: '2+', label: 'года опыта', color: 'from-[hsl(var(--brand-tertiary))] to-[hsl(var(--brand-tertiary)/0.8)]' },
+    { icon: Award, value: '100%', label: 'качество работ', color: 'from-[hsl(var(--brand-primary))] to-[hsl(var(--brand-primary)/0.8)]' },
+    { icon: Clock, value: '24/7', label: 'поддержка', color: 'from-[hsl(var(--brand-quaternary))] to-[hsl(var(--brand-quaternary)/0.8)]' }
   ];
 
   return (
@@ -32,7 +32,7 @@ const AboutSection: React.FC = () => {
           viewport={{ once: true }}
         >
           <h2 className="section-title text-center">
-            <span className="gradient-text from-brand-indigo to-brand-purple">Обо мне</span>
+            <span className="gradient-text from-[hsl(var(--brand-quaternary))] to-[hsl(var(--brand-tertiary))]">Обо мне</span>
           </h2>
         </motion.div>
         
@@ -123,7 +123,7 @@ const AboutSection: React.FC = () => {
               >
                 <Button 
                   onClick={() => document.getElementById('contacts')?.scrollIntoView({ behavior: 'smooth' })}
-                  className="w-full bg-gradient-to-r from-brand-red to-brand-brick text-white hover:opacity-90 transition-all duration-300 hover:scale-105 shadow-lg"
+                  className="w-full bg-[hsl(var(--brand-primary))] text-white hover:bg-[hsl(var(--brand-primary)/0.9)] transition-all duration-300 hover:scale-105 shadow-lg"
                 >
                   Связаться для консультации
                 </Button>
