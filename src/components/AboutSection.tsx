@@ -121,12 +121,12 @@ const AboutSection: React.FC = () => {
                 transition={{ duration: 0.5, delay: 0.6 }}
                 viewport={{ once: true }}
               >
-                <Button 
-                  onClick={() => document.getElementById('contacts')?.scrollIntoView({ behavior: 'smooth' })}
-                  className="w-full bg-[hsl(var(--brand-primary))] text-white hover:bg-[hsl(var(--brand-primary)/0.9)] transition-all duration-300 hover:scale-105 shadow-lg"
+                <a 
+                  href="mailto:ivlevish4ever@gmail.com"
+                  className="w-full bg-[hsl(var(--brand-primary))] text-white hover:bg-[hsl(var(--brand-primary)/0.9)] transition-all duration-300 hover:scale-105 shadow-lg inline-flex items-center justify-center gap-2 whitespace-nowrap rounded-md text-sm font-medium ring-offset-background focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 h-10 px-4 py-2"
                 >
                   Связаться для консультации
-                </Button>
+                </a>
               </motion.div>
             </div>
           </motion.div>

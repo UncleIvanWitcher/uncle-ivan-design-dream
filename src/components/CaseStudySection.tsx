@@ -92,12 +92,12 @@ const CaseStudySection: React.FC = () => {
                   которые помогли компании выделиться на рынке и привлечь новую аудиторию.
                 </p>
                 
-                <button 
-                  onClick={() => document.getElementById('contacts')?.scrollIntoView({ behavior: 'smooth' })}
+                <a 
+                  href="tel:+79167697802"
                   className="inline-flex items-center text-brand-red hover:text-brand-brick font-bold transition-colors"
                 >
                   Заказать подобный проект <ExternalLink className="w-5 h-5 ml-2" />
-                </button>
+                </a>
               </div>
             </div>
             
@@ -240,12 +240,12 @@ const CaseStudySection: React.FC = () => {
                       whileHover={{ scale: 1.03 }}
                       transition={{ type: "spring", stiffness: 400, damping: 10 }}
                     >
-                      <button 
-                        onClick={() => document.getElementById('contacts')?.scrollIntoView({ behavior: 'smooth' })}
+                      <a 
+                        href="mailto:ivlevish4ever@gmail.com"
                         className={`inline-flex items-center font-bold py-3 px-6 rounded-lg bg-white border-2 border-gray-200 hover:border-transparent hover:bg-gradient-to-r ${service.color} hover:text-white transition-all duration-300 hover:shadow-lg w-full justify-center`}
                       >
                         Решить проблему <ArrowRight className="w-5 h-5 ml-2" />
-                      </button>
+                      </a>
                     </motion.div>
                   </CardContent>
                 </Card>
@@ -300,12 +300,12 @@ const CaseStudySection: React.FC = () => {
             transition={{duration: 0.6}}
             viewport={{once: true}}
           >
-            <button 
-              onClick={() => document.getElementById('contacts')?.scrollIntoView({ behavior: 'smooth' })}
+            <a 
+              href="tel:+79167697802"
               className="inline-flex items-center bg-gradient-to-r from-brand-red to-brand-orange text-white font-bold py-4 px-8 rounded-xl hover:shadow-xl transition-all duration-300 hover:scale-105 text-lg"
             >
               Получить бесплатную консультацию <ArrowRight className="w-5 h-5 ml-2" />
-            </button>
+            </a>
           </motion.div>
         </div>
       </div>

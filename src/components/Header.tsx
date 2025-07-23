@@ -40,16 +40,14 @@ const Header: React.FC = () => {
             </p>
             
             <div className="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start">
-              <motion.button className="inline-flex items-center justify-center bg-[hsl(var(--brand-primary))] text-white hover:bg-[hsl(var(--brand-primary)/0.9)] font-bold py-3 px-6 rounded-lg transition-all duration-300 shadow-lg" whileHover={{
+              <motion.a href="tel:+79167697802" className="inline-flex items-center justify-center bg-[hsl(var(--brand-primary))] text-white hover:bg-[hsl(var(--brand-primary)/0.9)] font-bold py-3 px-6 rounded-lg transition-all duration-300 shadow-lg" whileHover={{
               scale: 1.05
             }} whileTap={{
               scale: 0.95
-            }} onClick={() => document.getElementById('contacts')?.scrollIntoView({
-              behavior: 'smooth'
-            })}>
+            }}>
                 <MessageSquare className="w-5 h-5 mr-2" />
                 Заказать проект
-              </motion.button>
+              </motion.a>
               
               <motion.button className="bg-white border-2 border-[hsl(var(--brand-primary))] text-[hsl(var(--brand-primary))] hover:bg-[hsl(var(--brand-primary))] hover:text-white font-bold py-3 px-6 rounded-lg transition-all duration-300 shadow-lg" whileHover={{
               scale: 1.05
